@@ -2,24 +2,27 @@ name: Deploy to Amazon ECS
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 env:
-  AWS_REGION: us-west-2
-  ECR_REPOSITORY: my-ecr-repository
-  ECS_SERVICE: node-red-service
-  ECS_CLUSTER: node-red-cluster
-  ECS_TASK_DEFINITION: AWS_Instance/task-definition.json
-  CONTAINER_NAME: node-red-container
+  AWS_REGION: eu-west-3                        # La région AWS (Europe Paris)
+  ECR_REPOSITORY: biketrack-repo1              # Nom de votre repository ECR
+  ECS_SERVICE: github-task-service             # Nom du service ECS à déployer
+  ECS_CLUSTER: bytrack-cluster                 # Nom de votre cluster ECS
+  ECS_TASK_DEFINITION: github-task            # Nom de votre définition de tâche ECS
+  CONTAINER_NAME: github-task-container       # Nom du conteneur dans la définition de tâche
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy to ECS
     runs-on: ubuntu-latest
     environment: production
 
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v4
 
     - name: Configure AWS credentials
@@ -33,25 +36,25 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    - name: Build, tag, and push image to Amazon ECR
+    - name: Build, tag, and push Docker image to ECR
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: ${{ github.sha }}  # Utilisation de l'ID de commit comme tag d'image
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
-    - name: Fill in the new image ID in the Amazon ECS task definition
+    - name: Update ECS Task Definition with new image
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: ${{ env.ECS_TASK_DEFINITION }}
+        task-definition: arn:aws:ecs:eu-west-3:619071335751:task-definition/github-task:1  # Utilisation de votre définition de tâche
         container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
 
-    - name: Deploy Amazon ECS task definition
+    - name: Deploy updated ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
