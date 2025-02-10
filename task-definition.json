@@ -1,0 +1,44 @@
+{
+    "family": "node-red-task",
+    "taskRoleArn": "arn:aws:iam::123456789012:role/my-task-role",
+    "executionRoleArn": "arn:aws:iam::123456789012:role/my-execution-role",
+    "networkMode": "bridge",
+    "containerDefinitions": [
+        {
+            "name": "node-red-container",
+            "image": "123456789012.dkr.ecr.us-west-2.amazonaws.com/my-node-red-image:latest",
+            "cpu": 256,
+            "memory": 512,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 1880,
+                    "hostPort": 1880,
+                    "protocol": "tcp"
+                }
+            ],
+            "environment": [
+                {
+                    "name": "NODE_ENV",
+                    "value": "production"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/node-red",
+                    "awslogs-region": "us-west-2",
+                    "awslogs-stream-prefix": "node-red"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "tags": [],
+    "pidMode": "host",
+    "ipcMode": "host"
+}
