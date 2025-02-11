@@ -54,27 +54,11 @@ To set up the Bike-Track project locally, follow these steps:
    Share your rides and milestones with friends via social media or within the app's community.
 
 ## Contributing
-We welcome contributions to the Bike-Track project! To contribute:
-
-1. Fork the repository and create a new branch for your feature or bug fix:
-   ```bash
-   git checkout -b feature-name
-   ```
-
-2. Make your changes and commit them with clear and concise messages:
-   ```bash
-   git commit -m "Add feature-name"
-   ```
-
-3. Push your changes to your forked repository:
-   ```bash
-   git push origin feature-name
-   ```
-
-4. Open a pull request to the main repository and provide a detailed description of your changes.
+The repository contribution is only-open for the development team:
+But still, we are open to public contribution to make the project progress
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is supervised by the Université Gustave-Effel institute
 
 ---
 Thank you for using Bike-Track! If you have any questions or feedback, feel free to open an issue or contact us.
