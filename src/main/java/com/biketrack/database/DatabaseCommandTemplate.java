@@ -4,6 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
+import java.io.InputStream;
+import java.util.Properties;
 
 /**
  * DatabaseCommandTemplate is a utility class that provides a template for creating,
@@ -12,6 +16,7 @@ import java.sql.SQLException;
 public class DatabaseCommandTemplate {
 
     private final Connection connection;
+    private Session sshSession;
 
     /**
      * Constructor to initialize the DatabaseCommandTemplate with a database connection.
@@ -20,6 +25,64 @@ public class DatabaseCommandTemplate {
      */
     public DatabaseCommandTemplate(Connection connection) {
         this.connection = connection;
+    }
+
+    /**
+     * Closes the SSH connection if it is established.
+     */
+    public void closeSSHConnection() {
+        if (sshSession != null && sshSession.isConnected()) {
+            sshSession.disconnect();
+        }
+    }
+
+    /**
+     * Executes a SQL command on the remote database via SSH.
+     *
+     * @param sqlCommand The SQL command to be executed.
+     * @return The output of the command execution.
+     * @throws Exception If an error occurs during command execution.
+     */
+    public String executeRemoteCommand(String sqlCommand) throws Exception {
+        if (sshSession == null || !sshSession.isConnected()) {
+            throw new IllegalStateException("SSH session is not established.");
+        }
+
+        try (InputStream inputStream = sshSession.openChannel("exec").getInputStream()) {
+            var channel = sshSession.openChannel("exec");
+            ((com.jcraft.jsch.ChannelExec) channel).setCommand(sqlCommand);
+            channel.connect();
+
+            StringBuilder output = new StringBuilder();
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                output.append(new String(buffer, 0, bytesRead));
+            }
+
+            channel.disconnect();
+            return output.toString();
+        }
+    }
+
+    /**
+     * Establishes an SSH connection to the remote server.
+     *
+     * @param host The remote host address.
+     * @param username The username for the SSH connection.
+     * @param privateKeyPath The path to the private key file.
+     * @throws Exception If an error occurs while establishing the SSH connection.
+     */
+    public void establishSSHConnection(String host, String username, String privateKeyPath) throws Exception {
+        JSch jsch = new JSch();
+        jsch.addIdentity(privateKeyPath);
+
+        sshSession = jsch.getSession(username, host, 22);
+        Properties config = new Properties();
+        config.put("StrictHostKeyChecking", "no");
+        sshSession.setConfig(config);
+
+        sshSession.connect();
     }
 
     /**
