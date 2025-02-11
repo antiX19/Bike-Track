@@ -1,0 +1,22 @@
+import os
+import requests
+
+# Define the directory and file path
+directory = "App"
+file_name = "Bike_Tracker.zip"
+file_url = "https://github.com/antiX19/Bike-Track/blob/main/Bike_Tracker.zip?raw=true"
+file_path = os.path.join(directory, file_name)
+
+# Step 1: Create the directory if it doesn't exist
+if not os.path.exists(directory):
+    os.makedirs(directory)
+
+# Step 2: Download the file from the URL
+response = requests.get(file_url, stream=True)
+if response.status_code == 200:
+    with open(file_path, "wb") as file:
+        for chunk in response.iter_content(chunk_size=8192):
+            file.write(chunk)
+    print(f"File downloaded successfully and saved to {file_path}")
+else:
+    print(f"Failed to download the file. HTTP Status Code: {response.status_code}")
