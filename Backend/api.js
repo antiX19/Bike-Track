@@ -1,147 +1,283 @@
+const httpsPort = 3002; // Définit le port HTTPS
 const express = require('express');
 const mysql = require('mysql2');
-const dotenv = require('dotenv');
-
-// Load environment variables from .env file
-dotenv.config();
-
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
+const fs = require('fs');
+const https = require('https');
+app.use(express.json()); // Middleware pour parser le JSON
 
-// Middleware to parse JSON requests
-app.use(express.json());
+// Charger les certificats SSL
 
-// MySQL database connection
+const sslOptions = {
+    key: fs.readFileSync('/etc/ssl/private/selfsigned.key'),
+    cert: fs.readFileSync('/etc/ssl/certs/selfsigned.crt')
+};
+
+
+// Connexion à la base de données MySQL
 const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: 'localhost',
+    user: 'tpreseau', // Remplace par ton utilisateur MySQL
+    password: 'tpreseau', // Remplace par ton mot de passe MySQL
+    database: 'biketrack'
 });
 
-// Connect to the database
-db.connect((err) => {
+db.connect(err => {
     if (err) {
-        console.error('Error connecting to the database:', err.message);
-        process.exit(1);
+        console.error('Erreur de connexion à MySQL :', err);
+        return;
     }
-    console.log('Connected to the MySQL database.');
+    console.log('Connecté à MySQL');
 });
 
-// API Endpoints
+// ========================= ROUTES =========================
 
-// 1. Fetch user details by email
-app.get('/api/users/:email', (req, res) => {
-    const { email } = req.params;
-    const query = 'SELECT id, UUID_velo, nom, prenom, email FROM user WHERE email = ?';
+// Route de test
+app.get('/', (req, res) => {
+    res.send('API BikeTrack est en ligne 🚴‍♂️!');
+});
 
-    db.query(query, [email], (err, results) => {
+// ROUTE POUR RECUPERER DONNEES GPS EN FCT DE L'UUID
+app.get('/gps/:UUID', (req, res) => {
+    const { UUID } = req.params;
+
+    db.query('SELECT gps, timestamp FROM localisation WHERE UUID_velo = ?', [UUID], (err, results) => {
         if (err) {
-            console.error('Error fetching user details:', err.message);
-            return res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({ error: err.message });
+        } else if (results.length === 0) {
+            res.status(404).json({ message: "Aucune donnée GPS trouvée pour cet UUID" });
+        } else {
+            res.json(results);
         }
-        if (results.length === 0) {
-            return res.status(404).json({ error: 'User not found' });
-        }
-        res.json(results[0]);
     });
 });
 
-// 2. Fetch bike details by UUID
-app.get('/api/bikes/:uuid', (req, res) => {
-    const { uuid } = req.params;
-    const query = 'SELECT UUID, user_id, statut, gps FROM velo WHERE UUID = ?';
 
-    db.query(query, [uuid], (err, results) => {
-        if (err) {
-            console.error('Error fetching bike details:', err.message);
-            return res.status(500).json({ error: 'Internal server error' });
-        }
-        if (results.length === 0) {
-            return res.status(404).json({ error: 'Bike not found' });
-        }
-        res.json(results[0]);
-    });
-});
+// ✅ Inscription d'un utilisateur avec enregistrement du vélo
+app.post('/register', (req, res) => {
+    const { UUID_velo, pseudo, email, psw, nom_module, pin } = req.body;
 
-// 3. Update bike status (e.g., stolen or normal)
-app.put('/api/bikes/:uuid/status', (req, res) => {
-    const { uuid } = req.params;
-    const { statut } = req.body;
-
-    if (typeof statut !== 'boolean') {
-        return res.status(400).json({ error: 'Invalid status value' });
+    if (!pseudo || !email || !psw) {
+        return res.status(400).json({ message: "Pseudo, email et mot de passe sont requis" });
     }
 
-    const query = 'UPDATE velo SET statut = ? WHERE UUID = ?';
+    db.query('INSERT INTO user (UUID_velo, pseudo, email, psw) VALUES (?, ?, ?, ?)',
+        [UUID_velo || null, pseudo, email, psw],
+        (err, userResult) => {
+            if (err) {
+                res.status(500).json({ error: err.message });
+            } else {
+                if (UUID_velo) {
+                    db.query('INSERT INTO velo (UUID, nom_module, pin) VALUES (?, ?, ?)',
+                        [UUID_velo, nom_module || null, pin || null],
+                        (err, veloResult) => {
+                            if (err) {
+                                res.status(500).json({ error: err.message });
+                            } else {
+                                res.json({
+                                    message: 'Utilisateur et vélo enregistrés avec succès',
+                                    user_id: userResult.insertId,
+                                    velo_id: veloResult.insertId
+                                });
+                            }
+                        }
+                    );
+                } else {
+                    res.json({
+                        message: 'Utilisateur enregistré avec succès',
+                        user_id: userResult.insertId
+                    });
+                }
+            }
+        }
+    );
+});
+// ✅ Changer le statut d'un vélo en volé
+app.put('/velo/vole/:UUID', (req, res) => {
+    const { UUID } = req.params;
+    const { user_id } = req.body; // ID de l'utilisateur connecté
 
-    db.query(query, [statut, uuid], (err, results) => {
+    if (!user_id) {
+        return res.status(400).json({ message: "L'ID utilisateur est requis" });
+    }
+
+    // Vérifier que le vélo appartient à cet utilisateur
+    db.query('SELECT * FROM velo WHERE UUID = ? AND user_id = ?', [UUID, user_id], (err, results) => {
         if (err) {
-            console.error('Error updating bike status:', err.message);
-            return res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({ error: err.message });
+        } else if (results.length === 0) {
+            res.status(403).json({ message: "Action non autorisée. Ce vélo ne vous appartient pas." });
+        } else {
+            // Mise à jour du statut
+            db.query('UPDATE velo SET statut = 1 WHERE UUID = ?', [UUID], (err, result) => {
+                if (err) {
+                    res.status(500).json({ error: err.message });
+                } else {
+                    res.json({ message: `Le vélo ${UUID} est maintenant marqué comme volé.` });
+                }
+            });
         }
-        if (results.affectedRows === 0) {
-            return res.status(404).json({ error: 'Bike not found' });
-        }
-        res.json({ message: 'Bike status updated successfully' });
     });
 });
 
-// 4. Fetch bike location history by UUID
-app.get('/api/bikes/:uuid/locations', (req, res) => {
-    const { uuid } = req.params;
-    const query = 'SELECT gps, timestamp FROM localisation WHERE UUID_velo = ? ORDER BY timestamp DESC';
+// ✅ Changer le statut d'un vélo en retrouvé (sécurisé par user_id)
+app.put('/velo/retrouve/:UUID', (req, res) => {
+    const { UUID } = req.params;
+    const { user_id } = req.body;
 
-    db.query(query, [uuid], (err, results) => {
+    if (!user_id) {
+        return res.status(400).json({ message: "L'ID utilisateur est requis" });
+    }
+
+    // Vérifier que l'utilisateur est bien le propriétaire du vélo
+    db.query('SELECT * FROM velo WHERE UUID = ? AND user_id = ?', [UUID, user_id], (err, results) => {
         if (err) {
-            console.error('Error fetching bike location history:', err.message);
-            return res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({ error: err.message });
+        } else if (results.length === 0) {
+            res.status(403).json({ message: "Action non autorisée. Ce vélo ne vous appartient pas." });
+        } else {
+            // Mise à jour du statut
+            db.query('UPDATE velo SET statut = 0 WHERE UUID = ?', [UUID], (err, result) => {
+                if (err) {
+                    res.status(500).json({ error: err.message });
+                } else {
+                    res.json({ message: `Le vélo ${UUID} a été retrouvé.` });
+                }
+            });
         }
-        res.json(results);
+    });
+});
+// ✅ Enregistrer les données GPS après vérification de l'UUID
+app.post('/gps/test', (req, res) => {
+	const { UUID_velo, gps } = req.body;
+
+	if (!UUID_velo || !gps) {
+    	return res.status(400).json({ message: "UUID_velo et gps sont requis" });
+	}
+
+	// Vérifier si l'UUID_velo existe dans la base
+	db.query('SELECT UUID FROM velo WHERE UUID = ?', [UUID_velo], (err, results) => {
+    	if (err) {
+        	res.status(500).json({ error: err.message });
+    	} else if (results.length === 0) {
+        	res.status(404).json({ message: "UUID_velo non trouvé dans la base de données" });
+    	} else {
+        	// Insérer la localisation
+        	db.query('INSERT INTO localisation (UUID_velo, gps) VALUES (?, ?)',
+            	[UUID_velo, gps],
+            	(err, result) => {
+                	if (err) {
+                    	res.status(500).json({ error: err.message });
+                	} else {
+                    	res.json({ message: "Localisation ajoutée avec succès", id: result.insertId });
+                	}
+            	}
+        	);
+    	}
+	});
+});
+
+// ✅ Récupérer le statut d'un vélo lié à un utilisateur
+app.get('/velo/statut/:UUID', (req, res) => {
+	const { UUID } = req.params;
+
+	db.query('SELECT statut FROM velo WHERE UUID = ?', [UUID], (err, results) => {
+    	if (err) {
+        	res.status(500).json({ error: err.message });
+    	} else if (results.length === 0) {
+        	res.status(404).json({ message: "UUID non trouvé" });
+    	} else {
+        	res.json({ UUID, statut: results[0].statut });
+    	}
+	});
+});
+
+// ✅ Lier un UUID à un utilisateur
+app.post('/user/velo', (req, res) => {
+	const { user_id, UUID_velo } = req.body;
+
+	if (!user_id || !UUID_velo) {
+    	return res.status(400).json({ message: "L'ID utilisateur et l'UUID du vélo sont requis" });
+	}
+
+	db.query('UPDATE user SET UUID_velo = ? WHERE id = ?', [UUID_velo, user_id], (err, result) => {
+    	if (err) {
+        	res.status(500).json({ error: err.message });
+    	} else {
+        	res.json({ message: `Vélo ${UUID_velo} lié à l'utilisateur ${user_id}` });
+    	}
+	});
+});
+
+// ✅ Méthode de connexion avec vérification des identifiants
+app.post('/login', (req, res) => {
+	const { email, psw } = req.body;
+
+	if (!email || !psw) {
+    	return res.status(400).json({ message: "Email et mot de passe requis" });
+	}
+
+	db.query('SELECT id, UUID_velo, pseudo FROM user WHERE email = ? AND psw = ?',
+    	[email, psw],
+    	(err, results) => {
+        	if (err) {
+            	res.status(500).json({ error: err.message });
+        	} else if (results.length === 0) {
+            	res.status(401).json({ message: "Identifiants incorrects" });
+        	} else {
+            	res.json({ message: "Connexion réussie", user: results[0] });
+        	}
+    	}
+	);
+});
+
+// ✅ Enregistrer les données GPS uniquement si le vélo est volé
+app.post('/gps', (req, res) => {
+    const { UUID_velo, gps } = req.body;
+
+    if (!UUID_velo || !gps) {
+        return res.status(400).json({ message: "UUID_velo et gps sont requis" });
+    }
+
+    // Vérifier si l'UUID_velo existe et récupérer son statut
+    db.query('SELECT statut FROM velo WHERE UUID = ?', [UUID_velo], (err, results) => {
+        if (err) {
+            res.status(500).json({ error: err.message });
+        } else if (results.length === 0) {
+            res.status(404).json({ message: "UUID_velo non trouvé dans la base de données" });
+        } else {
+            const statut = results[0].statut;
+            
+            // Si le vélo est volé, insérer la localisation
+            if (statut === 1) {
+                db.query('INSERT INTO localisation (UUID_velo, gps) VALUES (?, ?)',
+                    [UUID_velo, gps],
+                    (err, result) => {
+                        if (err) {
+                            res.status(500).json({ error: err.message });
+                        } else {
+                            res.json({ 
+                                message: "Localisation ajoutée car le vélo est déclaré volé", 
+                                id: result.insertId, 
+                                statut_vol: "Attention, ce vélo est déclaré volé" 
+                            });
+                        }
+                    }
+                );
+            } else {
+                res.json({ message: "Le vélo n'est pas volé, aucune localisation enregistrée." });
+            }
+        }
     });
 });
 
-// Error handling for undefined routes
-app.use((req, res) => {
-    res.status(404).json({ error: 'Route not found' });
+// Lancer le serveur HTTP
+//app.listen(port, () => {
+//    console.log(`API REST démarrée en HTTP sur http://localhost:${port}`);
+//});
+
+// Lancer le serveur HTTPS
+https.createServer(sslOptions, app).listen(httpsPort, '0.0.0.0', () => {
+    console.log(`API REST démarrée en HTTPS sur https://13.36.126.63`);
 });
-
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
-```
-
----
-
-### Explanation of the Code:
-1. **Environment Variables**:
-   - The `dotenv` library is used to manage sensitive information like database credentials and the server port.
-
-2. **Database Connection**:
-   - The `mysql2` library is used to connect to the AWS RDS MySQL database.
-
-3. **Endpoints**:
-   - `/api/users/:email`: Fetches user details by email.
-   - `/api/bikes/:uuid`: Fetches bike details by UUID.
-   - `/api/bikes/:uuid/status`: Updates the status of a bike (e.g., stolen or normal).
-   - `/api/bikes/:uuid/locations`: Fetches the location history of a bike.
-
-4. **Error Handling**:
-   - Proper error messages are returned for database errors, invalid inputs, and undefined routes.
-
-5. **Security**:
-   - The API does not expose sensitive information like passwords.
-   - Input validation is performed for endpoints like updating bike status.
-
----
-
-### Final Notes:
-- Ensure that a `.env` file is created with the following variables:
-  ```
-  DB_HOST=<your-database-host>
-  DB_USER=<your-database-username>
-  DB_PASSWORD=<your-database-password>
-  DB_NAME=biketrack
-  PORT=3000
-  
