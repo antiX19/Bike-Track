@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ de saisie pour renommer le module BLE -->
+    <EditText
+        android:id="@+id/editTextModuleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Renomme ton vélo"
+        android:inputType="text" />
+
+    <!-- Bouton pour envoyer la commande de renommage -->
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmé"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
