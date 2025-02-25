@@ -20,7 +20,7 @@
  * 3. Accéder à l'API via `http://localhost:3000/`
  * 4. Créer/récupérer la clé de certificat en SSL
  * 5. Mettre à jour le fichier .env avec les paramètres de la base de données MySQL mis à jour
- * Il est conseillé de faire : echo "SECRET_KEY=$(openssl rand -hex 32)" >> .env
+ *    Il est conseillé de faire : echo "SECRET_KEY=$(openssl rand -hex 32)" >> .env pour générer la clé secrète.
  *
  * @date 24 février 2025
  */
