@@ -5,13 +5,15 @@ const fs = require('fs');
 const https = require('https');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-
 const app = express();
+const port = 3000;
 app.use(express.json()); // Middleware pour parser le JSON
 
-// 🔐 Charger les variables d'environnement
 const SECRET_KEY = process.env.SECRET_KEY;
-const httpsPort = process.env.HTTPS_PORT || 3003;
+
+// 🔐 Charger les variables d'environnement
+//const SECRET_KEY = process.env.SECRET_KEY;
+//const httpsPort = process.env.HTTPS_PORT || 3003;
 
 // 🎯 Connexion à la base de données
 const db = mysql.createConnection({
@@ -29,11 +31,11 @@ db.connect(err => {
     console.log('✅ Connecté à MySQL');
 });
 
-// 🌐 Charger les certificats SSL
+/* 🌐 Charger les certificats SSL
 const sslOptions = {
     key: fs.readFileSync(process.env.SSL_KEY_PATH),
     cert: fs.readFileSync(process.env.SSL_CERT_PATH)
-};
+};*/
 
 // ========================= MIDDLEWARE JWT =========================
 // 🔒 Middleware pour protéger les routes avec JWT
@@ -55,7 +57,7 @@ function verifyToken(req, res, next) {
 // ========================= ROUTES =========================
 
 // ✅ Route de test
-app.get('/', (req, res) => {
+app.get('/', verifyToken, (req, res) => {
     res.send('🚀 API BikeTrack est en ligne et sécurisée !');
 });
 
@@ -175,7 +177,12 @@ app.put('/velo/retrouve/:UUID', verifyToken, (req, res) => {
     });
 });
 
-// ========================= LANCEMENT DU SERVEUR HTTPS =========================
+// Démarer HTTP
+app.listen(port,'0.0.0.0', () => {
+    console.log(`API REST démarrée sur http://13.36.126.63:${port}`);
+});
+
+/* ========================= LANCEMENT DU SERVEUR HTTPS =========================
 https.createServer(sslOptions, app).listen(httpsPort, '0.0.0.0', () => {
     console.log(`🚀 API REST démarrée en HTTPS sur le port ${httpsPort}`);
-});
+});*/
