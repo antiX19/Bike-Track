@@ -1,0 +1,43 @@
+# 🔐 Fichier contenant des informations sensibles (variables d'environnement)
+.env
+
+# 📦 Dossier des dépendances Node.js (inutile à versionner)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# ⚙️ Fichiers générés automatiquement par l'éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# 🚀 Fichiers générés par PM2 (logs et état des processus)
+pm2/logs/
+pm2/pids/
+pm2/dump.pm2
+
+# 🔥 Fichiers temporaires et de cache
+tmp/
+cache/
+*.swp
+
+# ⚡ Certificats SSL (éviter de les exposer publiquement)
+*.pem
+*.crt
+*.key
+
+# 🖥️ Fichiers système Linux/Mac
+*.pid
+*.sock
+
+# 📜 Fichiers liés aux bases de données locales (si applicable)
+*.sqlite
+*.sqlite3
+*.db
+
+# 🔧 Fichiers de configuration spécifiques à l'environnement
+config/*.local.json
+config/local.js
