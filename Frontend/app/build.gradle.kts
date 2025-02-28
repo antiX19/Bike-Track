@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.exemple.applicationble"
+    namespace = "com.example.applicationble"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.exemple.applicationble"
+        applicationId = "com.example.applicationble"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.okhttp)
     implementation(libs.conscrypt.android)
     implementation(libs.retrofit)
