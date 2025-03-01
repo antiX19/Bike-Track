@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextEmailOrPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="@string/identifiant"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:hint="@string/mot_de_passe"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/se_connecter"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nouveau bouton pour bypasser la connexion -->
+    <Button
+        android:id="@+id/buttonBypass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/se_rappeler_de_mes_identifiants"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

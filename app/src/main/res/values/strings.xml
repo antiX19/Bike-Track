@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BikeTrack_App</string>
+    <string name="identifiant">identifiant</string>
+    <string name="mot_de_passe">mot de passe</string>
+    <string name="se_rappeler_de_mes_identifiants">Se rappeler de mes identifiants\n</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="mot_de_passe_oubli">mot de passe oublié</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="pseudo_email">Pseudo/Email</string>
+</resources>
