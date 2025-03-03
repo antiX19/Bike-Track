@@ -9,6 +9,7 @@
     <!-- Permissions Bluetooth et localisation -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -32,7 +33,7 @@
 
         <!-- Activité principale avec intent filter -->
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,12 +41,14 @@
             </intent-filter>
         </activity>
 
-        <!-- Activité d'identification accessible depuis l'application -->
         <activity
             android:name=".IdentificationActivity"
             android:exported="false" />
         <activity
             android:name=".RenameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
 
     </application>
