@@ -9,19 +9,27 @@
     <!-- Permissions Bluetooth et localisation -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_BLUETOOTH" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <meta-data android:name="android.bluetooth.LE_SCAN_COMPATIBILITY_MODE" android:value="true"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <!-- Permissions spécifiques pour Android 12 (API 31) et plus -->
     <uses-permission
-        android:name="android.permission.BLUETOOTH_SCAN"
-        android:usesPermissionFlags="neverForLocation" />
+        android:name="android.permission.BLUETOOTH_SCAN"/>
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
+        android:usesCleartextTraffic="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -30,10 +38,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationBLE"
         tools:targetApi="31">
+        <service
+            android:name=".ForegroundService"
+            android:foregroundServiceType="location"
+            android:exported="false"
+            tools:ignore="ForegroundServicePermission"
+            android:permission="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+
+        <service
+            android:name=".MonitoringService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <!-- Activité principale avec intent filter -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,15 +70,19 @@
             </intent-filter>
         </activity>
 
+        <!-- Activité d'identification accessible depuis l'application -->
         <activity
             android:name=".IdentificationActivity"
             android:exported="false" />
         <activity
-            android:name=".RenameActivity"
+            android:name=".ConnexionActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+            android:name=".HomeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"/>
 
     </application>
 

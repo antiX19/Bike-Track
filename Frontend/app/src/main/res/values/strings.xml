@@ -1,11 +1,4 @@
 <resources>
     <string name="app_name">ApplicationBLE</string>
-    <string name="identifiant">Identifiant</string>
-    <string name="mot_de_passe">Mot de passe</string>
-    <string name="se_rappeler_de_mes_identifiants">Se rappeler de mes identifiants</string>
-    <string name="se_connecter">Se connecter</string>
-    <string name="mot_de_passe_oubli">Mot de passe oublié</string>
-    <string name="start">Start</string>
-    <string name="exit">Exit</string>
-    <string name="creer_un_compte">Créer un compte</string>
+    <string name="menu_hamburger">Ouvrir le menu</string>
 </resources>

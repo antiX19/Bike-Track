@@ -4,6 +4,7 @@
         <domain includeSubdomains="true">13.36.126.63</domain>
         <trust-anchors>
             <certificates src="system" />
+            <certificates src="@raw/selfsigned" />
             <!-- Si vous avez un certificat personnalisé -->
             <!-- <certificates src="@raw/my_cert" /> -->
         </trust-anchors>

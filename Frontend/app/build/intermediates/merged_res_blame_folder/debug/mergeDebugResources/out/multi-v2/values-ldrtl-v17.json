@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.exemple.applicationble.app-mergeDebugResources-29:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.exemple.applicationble.app-mergeDebugResources-31:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/home/tpreseau/.gradle/caches/8.10.2/transforms/0640086577135936531c0c4c61129267/transformed/material-1.12.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "/home/tpreseau/.gradle/caches/8.10.2/transforms/f0436911c24b8e28a9a2968f6dbd67c2/transformed/material-1.12.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

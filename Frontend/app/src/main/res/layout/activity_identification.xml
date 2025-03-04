@@ -10,6 +10,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Partie Identification -->
         <!-- Champ Adresse Email -->
         <EditText
             android:id="@+id/editTextEmail"
@@ -42,6 +43,68 @@
             android:hint="Confirmation du mot de passe"
             android:inputType="textPassword" />
 
+        <!-- Nouveau champ Code PIN -->
+        <EditText
+            android:id="@+id/editTextPIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Code PIN (1-6 chiffres, 0 à 9)"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6" />
+
+        <!-- Section de sélection de la question de sécurité -->
+        <TextView
+            android:id="@+id/textViewSecurityPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisissez une question de sécurité :"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSecurityQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 1" />
+
+            <RadioButton
+                android:id="@+id/radioQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 2" />
+
+            <RadioButton
+                android:id="@+id/radioQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 3" />
+        </RadioGroup>
+
+        <!-- Champ pour saisir la réponse à la question sélectionnée -->
+        <EditText
+            android:id="@+id/editTextSecurityAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre réponse"
+            android:inputType="text" />
+
+        <!-- Message explicatif pour la sécurité -->
+        <TextView
+            android:id="@+id/textViewSecurityNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ne l'oubliez pas, cette réponse vous permettra de changer votre mot de passe."
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
         <!-- Bouton pour lancer le scan BLE -->
         <Button
             android:id="@+id/buttonTrouveTonVelo"
@@ -57,13 +120,39 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp" />
 
-        <!-- Bouton pour se connecter au module BLE sélectionné -->
+        <!-- Bouton pour se connecter au module BLE sélectionné (lancement du renommage) -->
         <Button
             android:id="@+id/buttonInscription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inscription"
             android:layout_marginTop="16dp" />
+
+        <!-- Partie Renommage (intégrée depuis activity_rename.xml) -->
+        <LinearLayout
+            android:id="@+id/layoutRename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- Champ de saisie pour renommer le module BLE -->
+            <EditText
+                android:id="@+id/editTextModuleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Renomme ton vélo"
+                android:inputType="text"
+                android:maxLength="12" />
+
+            <!-- Bouton pour envoyer la commande de renommage -->
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmé"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
