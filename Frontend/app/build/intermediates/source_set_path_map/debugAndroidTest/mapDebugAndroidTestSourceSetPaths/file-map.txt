@@ -1,0 +1,5 @@
+com.exemple.applicationble.test.app-core-1.6.1-0 /home/tpreseau/.gradle/caches/8.10.2/transforms/5831ff25e9fa1703cde58a70ee73d136/transformed/core-1.6.1/res
+com.exemple.applicationble.test.app-androidTest-1 /home/tpreseau/Documents/LastProject/Frontend/app/build/generated/res/resValues/androidTest/debug
+com.exemple.applicationble.test.app-mergeDebugAndroidTestResources-2 /home/tpreseau/Documents/LastProject/Frontend/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.exemple.applicationble.test.app-mergeDebugAndroidTestResources-3 /home/tpreseau/Documents/LastProject/Frontend/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.exemple.applicationble.test.app-debugAndroidTest-4 /home/tpreseau/Documents/LastProject/Frontend/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
