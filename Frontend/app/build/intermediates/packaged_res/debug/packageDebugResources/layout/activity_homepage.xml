@@ -1,27 +1,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF">
 
     <!-- Logo -->
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="295dp"
-        android:layout_height="160dp"
-        android:layout_above="@+id/main_image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/logo_preview" />
+        android:id="@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/bike_logo"
+        android:gravity="center"
+        android:src="@drawable/ic_logo_wobg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Image principale -->
     <ImageView
         android:id="@+id/main_image"
         android:layout_width="304dp"
         android:layout_height="368dp"
+        android:layout_below="@+id/logoImage"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-
+        android:layout_marginTop="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/home_illu" />
 

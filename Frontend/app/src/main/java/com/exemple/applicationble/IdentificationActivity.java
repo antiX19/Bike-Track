@@ -61,7 +61,6 @@ public class IdentificationActivity extends AppCompatActivity {
     private BluetoothDevice currentConnectedDevice = null;
 
 
-    // Remplacez ces UUID par ceux correspondant à votre module BLE
     private static final UUID SERVICE_UUID = UUID.fromString("0000ffe0-0000-1000-8000-00805f9b34fb");
     private static final UUID CHARACTERISTIC_UUID = UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb");
 

@@ -5,4 +5,5 @@
     <color name="apptheme">#263ED2</color>
     <color name="light_gray">#F5F5F5</color>
     <color name="heavy_gray">#A69E97</color>
+    <color name="Title">#1A202C</color>
 </resources>

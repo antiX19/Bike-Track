@@ -1,62 +1,66 @@
 package com.exemple.applicationble;
 
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
-    private EditText etUsername, etPassword;
-    private CheckBox cbRememberMe;
-    private SharedPreferences sharedPreferences;
+    private EditText emailInput;
+    private EditText passwordInput;
+    private Button loginButton;
+    private TextView forgotPasswordLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_login);
-        etUsername = findViewById(R.id.etUsername);
-        etPassword = findViewById(R.id.etPassword);
-        cbRememberMe = findViewById(R.id.cbRememberMe);
-        Button btnLogin = findViewById(R.id.btnLogin);
-        TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
-        sharedPreferences = getSharedPreferences("LoginPrefs", MODE_PRIVATE);
-        boolean isRemembered = sharedPreferences.getBoolean("remember", false);
+        // Initialize UI components
+        emailInput = findViewById(R.id.etUsername);
+        passwordInput = findViewById(R.id.etPassword);
+        loginButton = findViewById(R.id.etL);
+        forgotPasswordLink = findViewById(R.id.forgotPasswordLink);
 
-        if (isRemembered) {
-            etUsername.setText(sharedPreferences.getString("username", ""));
-            etPassword.setText(sharedPreferences.getString("password", ""));
-            cbRememberMe.setChecked(true);
-        }
+        // Handle Login Button Click
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = emailInput.getText().toString();
+                String password = passwordInput.getText().toString();
 
-        btnLogin.setOnClickListener(v -> {
-            String username = etUsername.getText().toString();
-            String password = etPassword.getText().toString();
-            boolean remember = cbRememberMe.isChecked();
-
-            if (remember) {
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("username", username);
-                editor.putString("password", password);
-                editor.putBoolean("remember", true);
-                editor.apply();
-            } else {
-                sharedPreferences.edit().clear().apply();
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    authenticateUser(email, password);
+                }
             }
-
-            // Simuler une connexion rÃ©ussie
-            Toast.makeText(this, "Connexion réussie !", Toast.LENGTH_SHORT).show();
         });
 
-        tvForgotPassword.setOnClickListener(v -> {
-            Toast.makeText(this, "Redirection vers la récupération du mot de passe", Toast.LENGTH_SHORT).show();
+        // Handle Forgot Password Link Click
+        forgotPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect to Forgot Password Activity
+                Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
         });
     }
-}
 
+    private void authenticateUser(String email, String password) {
+        // Replace this with your authentication logic (e.g., API call)
+        if (email.equals("test@example.com") && password.equals("password123")) {
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+            // Redirect to another activity
+        } else {
+            Toast.makeText(this, "Invalid email or password", Toast.LENGTH_SHORT).show();
+        }
+    }
+}

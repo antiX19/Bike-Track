@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.exemple.applicationble.app-mergeDebugResources-29:/values-v23/values-v23.xml",
+            "outputFile": "com.exemple.applicationble.app-mergeDebugResources-2:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/tpreseau/.gradle/caches/8.10.2/transforms/0640086577135936531c0c4c61129267/transformed/material-1.12.0/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,5,9,13,16,19,22,25,28,32",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,271,413,574,784,991,1198,1401,1603,1868",
-                        "endLines": "4,8,12,15,18,21,24,27,31,35",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "266,408,569,779,986,1193,1396,1598,1863,2136"
-                    },
-                    "to": {
-                        "startLines": "53,56,60,64,67,70,73,76,79,83",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3382,3598,3740,3901,4111,4318,4525,4728,4930,5195",
-                        "endLines": "55,59,63,66,69,72,75,78,82,86",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3593,3735,3896,4106,4313,4520,4723,4925,5190,5463"
-                    }
-                },
-                {
-                    "source": "/home/tpreseau/.gradle/caches/8.10.2/transforms/6939aadee22cb8512bac5f797e3bf09a/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/506fbc62718a9b52fdaa19c69702a867/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/home/tpreseau/.gradle/caches/8.10.2/transforms/acd2ce688a4b4cfd4062c2e4dc3169a8/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,9,13,16,19,22,25,28,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,271,413,574,784,991,1198,1401,1603,1868",
+                        "endLines": "4,8,12,15,18,21,24,27,31,35",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "266,408,569,779,986,1193,1396,1598,1863,2136"
+                    },
+                    "to": {
+                        "startLines": "53,56,60,64,67,70,73,76,79,83",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3382,3598,3740,3901,4111,4318,4525,4728,4930,5195",
+                        "endLines": "55,59,63,66,69,72,75,78,82,86",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "3593,3735,3896,4106,4313,4520,4723,4925,5190,5463"
+                    }
+                },
+                {
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b7c09a5fbcfa7455e1458c1e2aa4cf72/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

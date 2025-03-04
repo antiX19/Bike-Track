@@ -1,33 +1,61 @@
 package com.exemple.applicationble;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.view.MenuItem;
+import android.widget.Toast;
+import com.exemple.applicationble.R;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonVelo, buttonCommu, buttonConnexion;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.drawerlayout);
 
-//        buttonVelo = findViewById(R.id.button_velo);
-//        buttonCommu = findViewById(R.id.button_commu);
-//        buttonConnexion = findViewById(R.id.button_connexion);
-//
-//        buttonVelo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // Lancement de l'activité d'identification pour "J'ai un vélo"
-//                Intent intent = new Intent(MainActivity.this, IdentificationActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        // Initialize DrawerLayout and NavigationView
+        drawerLayout = findViewById(R.id.drawerLayout);
+        navigationView = findViewById(R.id.navigationView);
 
-        // Autres listeners pour les autres boutons...
+        // Set up the toolbar
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // Set up the drawer toggle
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        // Handle navigation item clicks
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.nav_home:
+                        Toast.makeText(MainActivity.this, "Accueil sélectionné", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_profile:
+                        Toast.makeText(MainActivity.this, "Profil sélectionné", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_settings:
+                        Toast.makeText(MainActivity.this, "Paramètres sélectionnés", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_logout:
+                        Toast.makeText(MainActivity.this, "Déconnexion sélectionnée", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                drawerLayout.closeDrawers(); // Close the drawer after selection
+                return true;
+            }
+        });
     }
 }

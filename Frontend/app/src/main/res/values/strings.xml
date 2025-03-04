@@ -1,11 +1,29 @@
 <resources>
-    <string name="app_name">ApplicationBLE</string>
-    <string name="identifiant">Identifiant</string>
-    <string name="mot_de_passe">Mot de passe</string>
-    <string name="se_rappeler_de_mes_identifiants">Se rappeler de mes identifiants</string>
-    <string name="se_connecter">Se connecter</string>
-    <string name="mot_de_passe_oubli">Mot de passe oublié</string>
+    <string name="app_name">BikeTrack</string>
+    <string name="email_or_username_entry">Email or Username</string>
+    <string name="password">Password</string>
+    <string name="identifier_reminder">Remember me</string>
+    <string name="login">Login</string>
+    <string name="password_forgot">Forgot password ?</string>
     <string name="start">Start</string>
     <string name="exit">Exit</string>
-    <string name="creer_un_compte">Créer un compte</string>
+    <string name="create_account">Create an account</string>
+    <string name="email_entry">Enter email address\n</string>
+    <string name="bike_logo">bike_logo</string>
+    <string name="title_activity_pswd">Forgot your password</string>
+    <string name="activity_pswd_ressource_text">Please enter the email address you\'d like your password reset information sent to</string>
+    <string name="Send_secret_question">Answer to a secret question</string>
+    <string name="back_to_login">Back To Login</string>
+    <string name="english_language">English ▼</string>
+    <string name="sign_up">Sign up</string>
+    <string name="submit">Submit</string>
+    <string name="username_entry">Username</string>
+    <string name="password_confirmation">Confirm password</string>
+    <string name="pin_code">PIN Code</string>
+    <string name="pin_code_combined">PIN Code (6 digits max, 0–9)</string>
+    <string name="answer_to_security_question">Answer to Security Question</string>
+    <string name="reglementation">By clicking the Sign up button, you agree to our <u>Terms and Condition</u> and <u>Policy Privacy</u>.</string>
+    <string name="activity_main_title">Paramètres de l\'application</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
 </resources>
