@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="295dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logo_preview" />
+
+    <!-- Image principale -->
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="304dp"
+        android:layout_height="368dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_illu" />
+
+    <!-- Bouton Start -->
+        <Button
+        android:id="@+id/start_button"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/apptheme"
+        android:fontFamily="@font/staatliches_regular"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FDFDFD"
+        android:textSize="14sp" />
+
+    <!-- Bouton Exit -->
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/start_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/staatliches_regular"
+        android:text="@string/exit"
+        android:textColor="#A6A6A6"
+        android:textSize="12sp" />
+
+</RelativeLayout>
