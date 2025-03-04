@@ -1,0 +1,43 @@
+Terms and Conditions
+Effective Date: 04/04/2024
+Welcome to Bike-Track! These Terms and Conditions ("Terms") govern your use of the Bike-Track mobile application ("App") and its associated services. By accessing or using the App, you agree to comply with these Terms. If you do not agree, please do not use the App.
+
+1. Acceptance of Terms
+By using Bike-Track, you confirm that you are at least 13 years old or have the consent of a parent or guardian. Your use of the App constitutes your agreement to these Terms.
+
+2. Description of Services
+Bike-Track provides tools to:
+
+Track biking routes, distance, speed, and duration.
+Analyze biking performance with detailed statistics.
+Set and monitor personal biking goals.
+Share achievements with friends and the community.
+The App is designed for personal use and is not intended for commercial purposes.
+
+3. User Accounts
+You must create an account to access certain features of the App.
+You are responsible for maintaining the confidentiality of your account credentials.
+You agree to provide accurate and up-to-date information during registration.
+4. User Responsibilities
+When using Bike-Track, you agree to:
+
+Use the App only for lawful purposes.
+Not misuse or exploit the App for unauthorized purposes.
+Respect the intellectual property rights of Bike-Track and other users.
+5. Data Accuracy
+The App provides performance analytics and tracking data based on user input and device sensors. While we strive for accuracy, Bike-Track is not responsible for any inaccuracies in the data provided.
+
+6. Intellectual Property
+All content, features, and functionality of the App, including but not limited to text, graphics, logos, and software, are the property of Bike-Track or its licensors. You may not copy, modify, or distribute any part of the App without prior written consent.
+
+7. Limitation of Liability
+Bike-Track is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the App, including but not limited to data loss, inaccuracies, or interruptions.
+
+8. Termination
+We reserve the right to suspend or terminate your account if you violate these Terms or engage in unauthorized activities.
+
+9. Governing Law
+These Terms are governed by the civil and criminal laws of France. Any disputes arising from these Terms will be resolved in the courts of the French Ministère de la justice.
+
+10. Contact Us
+If you have any questions about these Terms, please contact us at communication@esiee.fr.

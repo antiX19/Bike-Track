@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="32sp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@color/Title" />
+
+        <!-- Email Address -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_entry"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg" />
+
+        <!-- Pseudo -->
+        <EditText
+            android:id="@+id/pseudoInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_entry"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_confirmation"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg" />
+
+        <!-- PIN Code -->
+        <EditText
+            android:id="@+id/pinCodeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pin_code_combined"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg" />
+
+        <!-- Security Question Dropdown -->
+        <Spinner
+            android:id="@+id/securityQuestionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_bg_whitebg"
+            android:padding="12dp" />
+
+        <!-- Answer to Security Question -->
+        <EditText
+            android:id="@+id/securityAnswerInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/answer_to_security_question"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_bg" />
+
+        <!-- Submit Button -->
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:backgroundTint="@color/apptheme"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="12dp" />
+
+        <!-- Section: Bluetooth -->
+        <TextView
+            android:id="@+id/textViewBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trouve ton vélo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#1A73E8" />
+
+        <Button
+            android:id="@+id/buttonTrouveTonVelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lancer le scan Bluetooth"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mobileapp_reglementation"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="10sp"
+            android:text="@string/reglementation"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+</ScrollView>
