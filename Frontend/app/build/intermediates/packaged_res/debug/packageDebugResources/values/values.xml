@@ -18,8 +18,11 @@
     <string name="email_or_username_entry">Email or Username</string>
     <string name="english_language">English ▼</string>
     <string name="exit">Exit</string>
+    <string name="find_your_bike">Find your bike</string>
+    <string name="helper_txt">Thank you for helping the community</string>
     <string name="identifier_reminder">Remember me</string>
     <string name="login">Login</string>
+    <string name="map_view_description">user map view position</string>
     <string name="navigation_drawer_close">Fermer le menu</string>
     <string name="navigation_drawer_open">Ouvrir le menu</string>
     <string name="password">Password</string>
@@ -28,6 +31,7 @@
     <string name="pin_code">PIN Code</string>
     <string name="pin_code_combined">PIN Code (6 digits max, 0–9)</string>
     <string name="reglementation">By clicking the Sign up button, you agree to our <u>Terms and Condition</u> and <u>Policy Privacy</u>.</string>
+    <string name="renamebike">Rename your bike</string>
     <string name="sign_up">Sign up</string>
     <string name="start">Start</string>
     <string name="submit">Submit</string>
@@ -35,7 +39,7 @@
     <string name="username_entry">Username</string>
     <style name="Base.Theme.ApplicationBLE" parent="Theme.Material3.DayNight.NoActionBar">
         
-        
+        <item name="colorPrimary">@color/apptheme</item>
     </style>
     <style name="Theme.ApplicationBLE" parent="Base.Theme.ApplicationBLE"/>
 </resources>

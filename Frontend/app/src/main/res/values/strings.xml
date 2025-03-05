@@ -26,4 +26,14 @@
     <string name="activity_main_title">Paramètres de l\'application</string>
     <string name="navigation_drawer_open">Ouvrir le menu</string>
     <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="map_view_description">user map view position</string>
+    <string name="find_your_bike">Find your bike</string>
+    <string name="renamebike">Rename your bike</string>
+    <string name="helper_txt">Thank you for helping the community</string>
+    <string name="back_button">back button</string>
+    <string name="menu">Menu</string>
+    <string name="visible">Visible</string>
+    <string name="non_visible">Non Visible</string>
+    <string name="bike_stolen">My bike is bike stolen</string>
+    <string name="bike_found">I found my bike</string>
 </resources>

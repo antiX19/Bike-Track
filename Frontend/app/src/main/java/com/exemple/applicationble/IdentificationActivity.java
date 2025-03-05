@@ -18,15 +18,19 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.TextureView;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.exemple.applicationble.R;
 
@@ -40,9 +44,11 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class IdentificationActivity extends AppCompatActivity {
-
-    private EditText editTextEmail, editTextPseudo, editTextPassword, editTextConfirmPassword;
-    private Button buttonTrouveTonVelo, buttonConnecter;
+    private static final int REQUEST_PERMISSION_CODE = 1;
+    private EditText editTextEmail, editTextUsername, editTextPassword, editTextConfirmPassword;
+    private Button renameBike;
+    private ImageView buttonConnect;
+    private TextView searchBike;
     private ListView listViewBleDevices;
     private ArrayAdapter<String> deviceAdapter;
     private ArrayList<String> deviceNames;
@@ -67,20 +73,17 @@ public class IdentificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_identification);
-
+        setContentView(R.layout.activity_createaccount);
         // Liaison des vues
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPseudo = findViewById(R.id.editTextPseudo);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        editTextConfirmPassword = findViewById(R.id.editTextConfirmPassword);
-        buttonTrouveTonVelo = findViewById(R.id.buttonTrouveTonVelo);
-        buttonConnecter = findViewById(R.id.buttonInscription);
-        listViewBleDevices = findViewById(R.id.listViewBleDevices);
-
+        editTextEmail = findViewById(R.id.emailInput);
+        editTextUsername = findViewById(R.id.usernameInput);
+        editTextPassword = findViewById(R.id.passwordInput);
+        editTextConfirmPassword = findViewById(R.id.confirmPasswordInput);
+        searchBike = findViewById(R.id.btnFindBike);
+        renameBike = findViewById(R.id.renamefoundBike);
+        buttonConnect = findViewById(R.id.valideform);
         // Désactivation du bouton "Connecter" tant que les champs ne sont pas valides
-        buttonConnecter.setEnabled(false);
-
+        renameBike.setEnabled(false);
         // Initialisation des listes pour le scan BLE
         deviceNames = new ArrayList<>();
         foundDevices = new ArrayList<>();
@@ -92,8 +95,7 @@ public class IdentificationActivity extends AppCompatActivity {
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);
 
-
-        buttonConnecter.setOnClickListener(v -> {
+        searchBike.setOnClickListener(v -> {
             // (Après avoir éventuellement validé les champs et envoyé les données à votre API)
             // Vérifiez que la connexion BLE est bien établie :
             if (currentGatt == null) {
@@ -152,7 +154,7 @@ public class IdentificationActivity extends AppCompatActivity {
         editTextConfirmPassword.addTextChangedListener(inputWatcher);
 
         // Bouton pour lancer le scan BLE
-        buttonTrouveTonVelo.setOnClickListener(v -> startBleScan());
+        buttonConnect.setOnClickListener(v -> startBleScan());
 
         // Bouton "Connecter" (vous pouvez y ajouter la logique finale de connexion si besoin)
 
@@ -176,14 +178,6 @@ public class IdentificationActivity extends AppCompatActivity {
         });
 
     }
-    public static BluetoothGatt getCurrentGatt() {
-        return currentGatt;
-    }
-    /**
-     * Valide l'email et les mots de passe.
-     * Affiche un message d'erreur sur le champ concerné si invalide.
-     * Active le bouton "Connecter" uniquement si toutes les validations sont correctes.
-     */
     private void validateInputs() {
         // Vérification de l'email
         email = editTextEmail.getText().toString().trim();
@@ -193,7 +187,7 @@ public class IdentificationActivity extends AppCompatActivity {
         } else {
             editTextEmail.setError(null);
         }
-        pseudo = editTextPseudo.getText().toString().trim();
+        pseudo = editTextUsername.getText().toString().trim();
         // Vérification des mots de passe
         password = editTextPassword.getText().toString();
         String confirmPassword = editTextConfirmPassword.getText().toString();
@@ -207,12 +201,9 @@ public class IdentificationActivity extends AppCompatActivity {
         }
 
         // Activation du bouton "Connecter" si les entrées sont valides
-        buttonConnecter.setEnabled(emailValid && passwordsValid);
+        searchBike.setEnabled(emailValid && passwordsValid);
     }
 
-    /**
-     * Lance le scan BLE et affiche dans la ListView uniquement les modules dont le nom commence par "HM".
-     */
     private void startBleScan() {
         // Vérification de la permission ACCESS_FINE_LOCATION
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -277,10 +268,6 @@ public class IdentificationActivity extends AppCompatActivity {
         }, SCAN_PERIOD);
     }
 
-    /**
-     * Callback pour gérer les changements d'état de connexion BLE.
-     * Une fois réellement connecté, on met à jour l'affichage.
-     */
     private final BluetoothGattCallback bluetoothGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
@@ -325,12 +312,6 @@ public class IdentificationActivity extends AppCompatActivity {
         }
     };
 
-
-    /**
-     * Met à jour l'affichage du statut du module dans la ListView.
-     * @param device Le module concerné.
-     * @param connected true si le module est connecté, false sinon.
-     */
     private void updateDeviceStatus(BluetoothDevice device, boolean connected) {
         int index = foundDevices.indexOf(device);
         if (index != -1) {
@@ -365,4 +346,10 @@ public class IdentificationActivity extends AppCompatActivity {
         characteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_DEFAULT);
         currentGatt.writeCharacteristic(characteristic);
     }
+
+
+    public static BluetoothGatt getCurrentGatt() {
+        return currentGatt;
+    }
+
 }

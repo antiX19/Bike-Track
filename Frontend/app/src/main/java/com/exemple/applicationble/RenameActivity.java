@@ -23,7 +23,7 @@ public class RenameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rename);
+/*        setContentView(R.layout.activity_rename);
 
         editTextModuleName = findViewById(R.id.editTextModuleName);
         buttonConfirm = findViewById(R.id.buttonConfirm);
@@ -73,10 +73,6 @@ public class RenameActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Récupère le UUID depuis le site internet, affiche le premier groupe en majuscules dans une pop-up et
-     * envoie la commande AT+IBE0 correspondante.
-     */
     private void fetchUuidFromWebsiteAndSendIbeCommand() {
         new Thread(new Runnable() {
             @Override
@@ -130,5 +126,7 @@ public class RenameActivity extends AppCompatActivity {
                 }
             }
         }).start();
+
+ */
     }
 }

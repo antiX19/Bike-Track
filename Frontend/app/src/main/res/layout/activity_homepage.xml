@@ -9,8 +9,12 @@
         android:id="@+id/logoImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
         android:contentDescription="@string/bike_logo"
         android:gravity="center"
         android:src="@drawable/ic_logo_wobg"
@@ -38,10 +42,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/apptheme"
-        android:fontFamily="@font/staatliches_regular"
+        android:fontFamily="@font/rubik_variablefont_wght"
         android:text="@string/start"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#FDFDFD"
+        android:textColor="@android:color/white"
         android:textSize="14sp" />
 
     <!-- Bouton Exit -->
@@ -55,7 +58,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="36dp"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/staatliches_regular"
+        android:fontFamily="@font/rubik_variablefont_wght"
         android:text="@string/exit"
         android:textColor="#A6A6A6"
         android:textSize="12sp" />

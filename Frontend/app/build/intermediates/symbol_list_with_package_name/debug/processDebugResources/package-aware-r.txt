@@ -3083,8 +3083,10 @@ drawable edittext_bg
 drawable edittext_bg_whitebg
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable helper_picture
 drawable home_illu
 drawable ic_arrow_back_black_24
+drawable ic_back
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3097,6 +3099,7 @@ drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_launcher_playstore
 drawable ic_lockon
 drawable ic_logo
 drawable ic_logo_wobg
@@ -3290,22 +3293,14 @@ id below
 id bestChoice
 id blocking
 id bottom
+id bottomLinearLayout
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnFindBike
 id btnLogin
-id buttonBypass
-id buttonConnect
-id buttonContainer
-id buttonMenu
-id buttonNonVisible
 id buttonPanel
-id buttonShowPin
-id buttonTrouveTonVelo
-id buttonVeloTrouve
-id buttonVeloVole
-id buttonVisible
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3376,14 +3371,13 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
 id east
 id edge
-id editTextEmailOrPseudo
-id editTextPassword
 id edit_query
 id edit_text_id
 id elastic
@@ -3433,7 +3427,6 @@ id hide_ime_id
 id hideable
 id home
 id homeAsUp
-id home_layout
 id honorRequest
 id horizontal
 id horizontal_only
@@ -3445,6 +3438,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3469,7 +3463,6 @@ id listMode
 id list_item
 id logo
 id logoImage
-id lvModules
 id m3_side_sheet
 id main_image
 id mapView
@@ -3533,11 +3526,12 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_header_subtitle
+id nav_header_title
 id nav_home
 id nav_logout
 id nav_profile
 id nav_settings
-id navigationView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3545,6 +3539,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id navigation_view
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3590,7 +3585,6 @@ id peekHeight
 id percent
 id pin
 id pinCodeInput
-id pinContainer
 id position
 id postLayout
 id pressed
@@ -3619,6 +3613,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollViewLinearLayout
 id scrollable
 id search_badge
 id search_bar
@@ -3672,7 +3667,6 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
-id submitButton
 id submit_area
 id subtitleText
 id supportScrollUp
@@ -3698,9 +3692,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textViewBluetooth
-id textViewForgotPassword
-id textViewPseudo
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3716,8 +3709,8 @@ id titleDividerNoCustom
 id titleText
 id title_template
 id toggle
-id toolbar
 id top
+id topLinearLayout
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3732,7 +3725,6 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvForgotPassword
-id tvPin
 id unchecked
 id uniform
 id unlabeled
@@ -3873,12 +3865,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_connexion
 layout activity_createaccount
-layout activity_home
+layout activity_helper
 layout activity_homepage
 layout activity_login
-layout activity_main2
+layout activity_main
 layout activity_pswd
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3896,7 +3887,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout drawerlayout
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3950,6 +3940,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -3960,7 +3951,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu navigation_menu
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4048,6 +4039,8 @@ string exit
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string find_your_bike
+string helper_txt
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string identifier_reminder
@@ -4069,6 +4062,7 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
+string map_view_description
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix
@@ -4166,6 +4160,7 @@ string path_password_strike_through
 string pin_code
 string pin_code_combined
 string reglementation
+string renamebike
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
