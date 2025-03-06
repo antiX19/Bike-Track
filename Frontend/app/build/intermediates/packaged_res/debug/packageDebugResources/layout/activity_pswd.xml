@@ -51,8 +51,9 @@
                 android:textColor="@color/Title"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/rubik_variablefont_wght"
                 tools:ignore="RtlHardcoded" />
-            <!--android:fontFamily="@font/staatliches_regular" -->
+            <!--android:fontFamily="@font/rubik_variablefont_wght" -->
 
 
             <!-- Subtitle -->
@@ -65,8 +66,9 @@
                 android:paddingBottom="16dp"
                 android:text="@string/activity_pswd_ressource_text"
                 android:textColor="#4A5568"
+                android:fontFamily="@font/rubik_variablefont_wght"
                 android:textSize="14sp" />
-            <!--android:fontFamily="@font/staatliches_regular" -->
+            <!--android:fontFamily="@font/rubik_variablefont_wght" -->
 
 
             <!-- Email Input -->
@@ -88,14 +90,76 @@
                 android:id="@+id/requestResetButton"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
-
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/apptheme"
                 android:padding="12dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_variablefont_wght"
                 android:text="@string/Send_secret_question"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/layoutNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="24dp">
+
+                <!-- Layout pour la question secrète et réponse (initialement invisible) -->
+                <LinearLayout
+                    android:id="@+id/layoutSecretQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewSecretQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your secret question"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editTextSecretAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Answer it"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/buttonValidateSecretAnswer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/editTextNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_new_password"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/editTextConfirmNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_new_password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/buttonUpdatePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
 
             <!-- Back to Login Link -->
             <TextView
@@ -105,6 +169,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/back_to_login"
+                android:fontFamily="@font/rubik_variablefont_wght"
                 android:textColor="@color/apptheme"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -119,6 +184,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/english_language"
         android:textColor="#4A5568"
+        android:fontFamily="@font/rubik_variablefont_wght"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

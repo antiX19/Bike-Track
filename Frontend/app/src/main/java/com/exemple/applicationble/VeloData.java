@@ -5,11 +5,14 @@ public class VeloData {
     private String gps;
     private String timestamp;
 
+
+
     // Constructeur
     public VeloData(String UUID_velo, String gps) {
         this.UUID_velo = UUID_velo;
         this.gps = gps;
     }
+
 
     // Getters et setters
     public String getUUID_velo() { return UUID_velo; }

@@ -8,7 +8,9 @@ import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
-import android.bluetooth.le.*;
+import android.bluetooth.le.BluetoothLeScanner;
+import android.bluetooth.le.ScanCallback;
+import android.bluetooth.le.ScanResult;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -18,8 +20,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.util.Patterns;
-import android.view.TextureView;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,9 +30,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import com.exemple.applicationble.R;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -103,7 +100,7 @@ public class IdentificationActivity extends AppCompatActivity {
                 return;
             }
             // Passe à l'activité de renommage
-            Intent intent = new Intent(IdentificationActivity.this, RenameActivity.class);
+            Intent intent = new Intent(IdentificationActivity.this, ForgotPasswordActivity.class);
             startActivity(intent);
             // Initialiser Retrofit
             // Créer un objet VeloData à envoyer

@@ -37,7 +37,7 @@
 
         <!-- Activité principale avec intent filter -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".HomePageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,10 +46,10 @@
         </activity>
 
         <activity
-            android:name=".IdentificationActivity"
+            android:name="com.example.recup.IdentificationActivity"
             android:exported="false" />
         <activity
-            android:name=".RenameActivity"
+            android:name=".Pswd_Regenerate"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BikeTrack</string>
+    <string name="welcome_app_ms">Bienvenue dans l\'application BikeTrack</string>
+</resources>

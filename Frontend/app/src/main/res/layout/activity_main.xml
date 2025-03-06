@@ -72,20 +72,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
-            android:columnCount="2"
+            android:columnCount="3"
             android:padding="10dp"
             android:rowCount="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lvModules">
 
-            <Button
-                android:id="@+id/btnVisible"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="@string/visible"
-                android:layout_margin="4dp" />
 
             <Button
                 android:id="@+id/btnNonVisible"

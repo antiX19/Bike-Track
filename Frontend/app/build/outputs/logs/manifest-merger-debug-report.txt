@@ -1,55 +1,56 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-56:12
-MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5791ab4a9232883a72d32fa3b75128a9/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/bfff30cfda46e0ee72a6b155bbffd55c/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5d92ad87b7248097a39933bdc8bb8834/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b7c09a5fbcfa7455e1458c1e2aa4cf72/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:16:1-35:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cbc7aa05a6ea718f481913b8f2956993/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/167e06127fab4348ca134b208f1e04aa/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/41902f46d427c533e1cd5c85d763e4e4/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/10a0071a6a1c47067cdc063703f49c90/transformed/activity-1.10.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/96ff1aac6bbc788f049b94fd22b47265/transformed/core-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b85e88bba10db51b9a6373191bb053d9/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c2fa1e1d926cef86ef16ec7690a2de4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/593a393c93cdeb059f624fd058022ff0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1d08e8e0a65883a529eee60d77d57ec4/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/0aef419ef15f7c8171bbe4cbca83317e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/8a0b2f1d6944c888157d613915a49d6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/4bee81b2159de4c212d39daa2fff05ea/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b8735099fee4d69ec3f1aead26ea3bb9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3fd7066bb43574aa2719bc7982513ec4/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/144420c610a8b4c5a9a28f13d51b9e38/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f1b21924a208e7d592511e1090230d04/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/16efe69e128abeebc95281ba7558325b/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/04d99b046b3a91357d1f2189109583b8/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/12a50f23973f8d307d3de78b337ec47b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b61952198c1e5fde85c35bebe8ada193/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d699c9c84485a1f952552616688ff1b5/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/6b08603eca36ba47f9a968d5068c5de2/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c006c4a2821f3cd2ed1c385e67ecd8bc/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f4d31012dc2fa618beb62aa69eb98611/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/506fbc62718a9b52fdaa19c69702a867/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/30f56b93cd3e1733a6e194c86317a16a/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f8d460f90b7dff96100015f1da28a608/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d08a05f67dd76bc761afff7f4a2cbaeb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/17f176846aa5f94cdde10eabc86dffcd/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/149469d11b703d5e2940a7641a1a4390/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/a851d87124ff9f77ed76539491585ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cd95bef483ab7cc440382c9b198c438e/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5db568b4cd86c097b86674223635b0c4/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-60:12
+MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23f0317fc90a5615f7d1d5256a23dc34/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/30b394a94a9864b678035fbacbbbc2a3/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a70708771b5ef506902eb305628381eb/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/589abfb8e04c980a0217a61a60701a88/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:16:1-35:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4c8e1e95dfa5d7d5461cda10b6f9b3f8/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/67959da4064484a244f4ac8fdb7e18de/transformed/play-services-location-21.3.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3e5b4630f6732ed528b07247656861fc/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/012a364f2f20cc163dc4c0e048167e62/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c0a7bbf7307d92268bd7321bd292e34e/transformed/activity-1.10.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f4c2a4338b7c36824289536d259d1c09/transformed/core-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e8af8cf423233a801d464753fe5ff728/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3727d5054522dd42509e3ccfbfc346d3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/54c9f85accd391a45e5d7e0022a55f90/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4af3857e9e0872e842e352713d1da10c/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/ff1d28f6c27dceada04f40237c88d2d0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2c5846df981d3caa3a3cb495348c73a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/8ec9ca81109a9a58ea18e31babc47338/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05ac929888f0ce6ee0f4d0c5f78d29db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/fb9900e7a4bc3efe04da97b46b9bda07/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/7c32a917911966423c167cd132ac42ae/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f45155599b6d93b55528c7cbbe9ad4a5/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1e5e589cccb923f9f151da4b95ced485/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05e5b7c63d8ecf2a7735e7106c7e5020/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/14b331373f74b082998e0d203cafb36b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5efefe540c6c7b9f9e361f1aa781008f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a76b684546d27e4d4221cb1410de470d/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2e1b6a78c60eee5f35cb5acc6e148d88/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c6f7a560de357ee3506746f2c9c86be0/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b2505a84384640a1ec843c3d80b503b3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49484d60d94cea747151c3ec5d3616ac/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f5100535b844322735f0dfa9a246cc99/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/374eab9a715a5ab9e64135de849443b4/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b39eb79d4c714d3cd5c23a490114a3b9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23b114bbef377b61500ef57e677e7213/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/38a87764137f40de4da7cdb13f4e9c0f/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4ede4176a13d29fa51d5468fe5513612/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1d18277e02ddf6c216f0b3d196602229/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49995cf9af72d9efd1aa212394ba8315/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 	package
 		INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -62,14 +63,14 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/D
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:3:5-63
 uses-permission#android.permission.INTERNET
 ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:7:5-78
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.BLUETOOTH
@@ -102,310 +103,320 @@ uses-permission#android.permission.BLUETOOTH_ADVERTISE
 ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:21:5-78
 	android:name
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:21:22-75
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-25:39
+	android:value
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:25:9-37
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:24:9-54
 application
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-54:19
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-54:19
-MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5791ab4a9232883a72d32fa3b75128a9/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
-MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5791ab4a9232883a72d32fa3b75128a9/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/bfff30cfda46e0ee72a6b155bbffd55c/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/bfff30cfda46e0ee72a6b155bbffd55c/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:31:5-34:19
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:31:5-34:19
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/167e06127fab4348ca134b208f1e04aa/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/167e06127fab4348ca134b208f1e04aa/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d08a05f67dd76bc761afff7f4a2cbaeb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d08a05f67dd76bc761afff7f4a2cbaeb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:27:5-58:19
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:27:5-58:19
+MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23f0317fc90a5615f7d1d5256a23dc34/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
+MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23f0317fc90a5615f7d1d5256a23dc34/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/30b394a94a9864b678035fbacbbbc2a3/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/30b394a94a9864b678035fbacbbbc2a3/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:31:5-34:19
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:31:5-34:19
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/67959da4064484a244f4ac8fdb7e18de/transformed/play-services-location-21.3.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/67959da4064484a244f4ac8fdb7e18de/transformed/play-services-location-21.3.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3e5b4630f6732ed528b07247656861fc/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3e5b4630f6732ed528b07247656861fc/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b39eb79d4c714d3cd5c23a490114a3b9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b39eb79d4c714d3cd5c23a490114a3b9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
 		INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:30:9-35
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:34:9-35
 	android:label
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:28:9-41
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:32:9-41
 	android:fullBackupContent
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:26:9-54
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:30:9-54
 	android:roundIcon
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:29:9-54
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:33:9-54
 	tools:targetApi
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:32:9-29
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:36:9-29
 	android:icon
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:27:9-43
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:31:9-43
 	android:allowBackup
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:28:9-35
 	android:theme
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:31:9-52
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:35:9-52
 	android:dataExtractionRules
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:25:9-65
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:29:9-65
 activity#com.exemple.applicationble.HomeActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:35:9-42:20
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:39:9-46:20
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:37:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:38:13-41:29
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:42:13-45:29
 action#android.intent.action.MAIN
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:39:17-69
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:39:25-66
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:17-77
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:27-74
-activity#com.exemple.applicationble.IdentificationActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:44:9-46:40
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:44:27-74
+activity#com.example.recup.IdentificationActivity
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:9-50:40
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:46:13-37
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:45:13-51
-activity#com.exemple.applicationble.RenameActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:47:9-49:40
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:13-68
+activity#com.exemple.applicationble.Pswd_Regenerate
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:9-53:40
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:13-37
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:13-43
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:13-44
 activity#com.exemple.applicationble.LoginActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:9-52:40
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:54:9-56:40
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:13-37
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:13-42
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:55:13-42
 uses-sdk
 INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
 INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
-MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5791ab4a9232883a72d32fa3b75128a9/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:7:5-9:41
-MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5791ab4a9232883a72d32fa3b75128a9/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/bfff30cfda46e0ee72a6b155bbffd55c/transformed/constraintlayout-2.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/bfff30cfda46e0ee72a6b155bbffd55c/transformed/constraintlayout-2.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5d92ad87b7248097a39933bdc8bb8834/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5d92ad87b7248097a39933bdc8bb8834/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b7c09a5fbcfa7455e1458c1e2aa4cf72/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b7c09a5fbcfa7455e1458c1e2aa4cf72/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:26:5-43
-MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:26:5-43
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cbc7aa05a6ea718f481913b8f2956993/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cbc7aa05a6ea718f481913b8f2956993/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/167e06127fab4348ca134b208f1e04aa/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/167e06127fab4348ca134b208f1e04aa/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
-MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/41902f46d427c533e1cd5c85d763e4e4/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/41902f46d427c533e1cd5c85d763e4e4/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/10a0071a6a1c47067cdc063703f49c90/transformed/activity-1.10.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/10a0071a6a1c47067cdc063703f49c90/transformed/activity-1.10.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/96ff1aac6bbc788f049b94fd22b47265/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/96ff1aac6bbc788f049b94fd22b47265/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b85e88bba10db51b9a6373191bb053d9/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b85e88bba10db51b9a6373191bb053d9/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c2fa1e1d926cef86ef16ec7690a2de4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c2fa1e1d926cef86ef16ec7690a2de4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/593a393c93cdeb059f624fd058022ff0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/593a393c93cdeb059f624fd058022ff0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1d08e8e0a65883a529eee60d77d57ec4/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1d08e8e0a65883a529eee60d77d57ec4/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/0aef419ef15f7c8171bbe4cbca83317e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/0aef419ef15f7c8171bbe4cbca83317e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/8a0b2f1d6944c888157d613915a49d6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/8a0b2f1d6944c888157d613915a49d6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/4bee81b2159de4c212d39daa2fff05ea/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/4bee81b2159de4c212d39daa2fff05ea/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b8735099fee4d69ec3f1aead26ea3bb9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b8735099fee4d69ec3f1aead26ea3bb9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3fd7066bb43574aa2719bc7982513ec4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3fd7066bb43574aa2719bc7982513ec4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/144420c610a8b4c5a9a28f13d51b9e38/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/144420c610a8b4c5a9a28f13d51b9e38/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f1b21924a208e7d592511e1090230d04/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f1b21924a208e7d592511e1090230d04/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/16efe69e128abeebc95281ba7558325b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/16efe69e128abeebc95281ba7558325b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/04d99b046b3a91357d1f2189109583b8/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/04d99b046b3a91357d1f2189109583b8/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/12a50f23973f8d307d3de78b337ec47b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/12a50f23973f8d307d3de78b337ec47b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b61952198c1e5fde85c35bebe8ada193/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b61952198c1e5fde85c35bebe8ada193/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d699c9c84485a1f952552616688ff1b5/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d699c9c84485a1f952552616688ff1b5/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/6b08603eca36ba47f9a968d5068c5de2/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/6b08603eca36ba47f9a968d5068c5de2/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c006c4a2821f3cd2ed1c385e67ecd8bc/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/c006c4a2821f3cd2ed1c385e67ecd8bc/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f4d31012dc2fa618beb62aa69eb98611/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f4d31012dc2fa618beb62aa69eb98611/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/506fbc62718a9b52fdaa19c69702a867/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/506fbc62718a9b52fdaa19c69702a867/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/30f56b93cd3e1733a6e194c86317a16a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/30f56b93cd3e1733a6e194c86317a16a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f8d460f90b7dff96100015f1da28a608/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/f8d460f90b7dff96100015f1da28a608/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d08a05f67dd76bc761afff7f4a2cbaeb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/d08a05f67dd76bc761afff7f4a2cbaeb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/17f176846aa5f94cdde10eabc86dffcd/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/17f176846aa5f94cdde10eabc86dffcd/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/149469d11b703d5e2940a7641a1a4390/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/149469d11b703d5e2940a7641a1a4390/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/a851d87124ff9f77ed76539491585ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/a851d87124ff9f77ed76539491585ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cd95bef483ab7cc440382c9b198c438e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/cd95bef483ab7cc440382c9b198c438e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5db568b4cd86c097b86674223635b0c4/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/5db568b4cd86c097b86674223635b0c4/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23f0317fc90a5615f7d1d5256a23dc34/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:7:5-9:41
+MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23f0317fc90a5615f7d1d5256a23dc34/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/30b394a94a9864b678035fbacbbbc2a3/transformed/constraintlayout-2.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/30b394a94a9864b678035fbacbbbc2a3/transformed/constraintlayout-2.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a70708771b5ef506902eb305628381eb/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a70708771b5ef506902eb305628381eb/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/589abfb8e04c980a0217a61a60701a88/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/589abfb8e04c980a0217a61a60701a88/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:26:5-43
+MERGED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:26:5-43
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4c8e1e95dfa5d7d5461cda10b6f9b3f8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4c8e1e95dfa5d7d5461cda10b6f9b3f8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/67959da4064484a244f4ac8fdb7e18de/transformed/play-services-location-21.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-location:21.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/67959da4064484a244f4ac8fdb7e18de/transformed/play-services-location-21.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3e5b4630f6732ed528b07247656861fc/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3e5b4630f6732ed528b07247656861fc/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/012a364f2f20cc163dc4c0e048167e62/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/012a364f2f20cc163dc4c0e048167e62/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c0a7bbf7307d92268bd7321bd292e34e/transformed/activity-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c0a7bbf7307d92268bd7321bd292e34e/transformed/activity-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f4c2a4338b7c36824289536d259d1c09/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f4c2a4338b7c36824289536d259d1c09/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e8af8cf423233a801d464753fe5ff728/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e8af8cf423233a801d464753fe5ff728/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3727d5054522dd42509e3ccfbfc346d3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/3727d5054522dd42509e3ccfbfc346d3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/54c9f85accd391a45e5d7e0022a55f90/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/54c9f85accd391a45e5d7e0022a55f90/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4af3857e9e0872e842e352713d1da10c/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4af3857e9e0872e842e352713d1da10c/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/ff1d28f6c27dceada04f40237c88d2d0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/ff1d28f6c27dceada04f40237c88d2d0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2c5846df981d3caa3a3cb495348c73a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2c5846df981d3caa3a3cb495348c73a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/8ec9ca81109a9a58ea18e31babc47338/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/8ec9ca81109a9a58ea18e31babc47338/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05ac929888f0ce6ee0f4d0c5f78d29db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05ac929888f0ce6ee0f4d0c5f78d29db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/fb9900e7a4bc3efe04da97b46b9bda07/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/fb9900e7a4bc3efe04da97b46b9bda07/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/7c32a917911966423c167cd132ac42ae/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/7c32a917911966423c167cd132ac42ae/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f45155599b6d93b55528c7cbbe9ad4a5/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f45155599b6d93b55528c7cbbe9ad4a5/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1e5e589cccb923f9f151da4b95ced485/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1e5e589cccb923f9f151da4b95ced485/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05e5b7c63d8ecf2a7735e7106c7e5020/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05e5b7c63d8ecf2a7735e7106c7e5020/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/14b331373f74b082998e0d203cafb36b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/14b331373f74b082998e0d203cafb36b/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5efefe540c6c7b9f9e361f1aa781008f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5efefe540c6c7b9f9e361f1aa781008f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a76b684546d27e4d4221cb1410de470d/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a76b684546d27e4d4221cb1410de470d/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2e1b6a78c60eee5f35cb5acc6e148d88/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/2e1b6a78c60eee5f35cb5acc6e148d88/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c6f7a560de357ee3506746f2c9c86be0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c6f7a560de357ee3506746f2c9c86be0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b2505a84384640a1ec843c3d80b503b3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b2505a84384640a1ec843c3d80b503b3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49484d60d94cea747151c3ec5d3616ac/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49484d60d94cea747151c3ec5d3616ac/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f5100535b844322735f0dfa9a246cc99/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f5100535b844322735f0dfa9a246cc99/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/374eab9a715a5ab9e64135de849443b4/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/374eab9a715a5ab9e64135de849443b4/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b39eb79d4c714d3cd5c23a490114a3b9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b39eb79d4c714d3cd5c23a490114a3b9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23b114bbef377b61500ef57e677e7213/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/23b114bbef377b61500ef57e677e7213/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/38a87764137f40de4da7cdb13f4e9c0f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/38a87764137f40de4da7cdb13f4e9c0f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4ede4176a13d29fa51d5468fe5513612/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/4ede4176a13d29fa51d5468fe5513612/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1d18277e02ddf6c216f0b3d196602229/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/1d18277e02ddf6c216f0b3d196602229/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49995cf9af72d9efd1aa212394ba8315/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/49995cf9af72d9efd1aa212394ba8315/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
 		INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
+ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
+		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
+		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
 queries
-ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
+ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
 package#com.google.android.apps.maps
-ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
+ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
+		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
 uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
+ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
+		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9b45dd02e2e033a3ac2a25cc938b43c4/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
+		ADDED from [com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/27bd152a4ecad68606c7aedb041bc640/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/cf50ccff1a8ac5b57cbd8a67188d2e1d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/9ca773d564f4f5296000698ba58c2c37/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
 permission#com.exemple.applicationble.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 uses-permission#com.exemple.applicationble.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/1ec02f8f24495524d85e65da90329e8d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/82cc4419f30ff69ed35b442f57231bd9/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

@@ -4,7 +4,7 @@
             "outputFile": "com.exemple.applicationble.app-mergeDebugResources-2:/values-as/values-as.xml",
             "map": [
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/b7c09a5fbcfa7455e1458c1e2aa4cf72/transformed/appcompat-1.7.0/res/values-as/values-as.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/589abfb8e04c980a0217a61a60701a88/transformed/appcompat-1.7.0/res/values-as/values-as.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/ac5393066cae98d0b355c9c86f8a8d1f/transformed/core-1.13.0/res/values-as/values-as.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,156,259,367,472,576,676,805",
-                        "endColumns": "100,102,107,104,103,99,128,100",
-                        "endOffsets": "151,254,362,467,571,671,800,901"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,134",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3472,3573,3676,3784,3889,3993,4093,11866",
-                        "endColumns": "100,102,107,104,103,99,128,100",
-                        "endOffsets": "3568,3671,3779,3884,3988,4088,4217,11962"
-                    }
-                },
-                {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/db0629cd9b555200776b446979533fe6/transformed/material-1.12.0/res/values-as/values-as.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/res/values-as/values-as.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/3212296acfbea9fb6f2cee369f5a0ff3/transformed/play-services-base-18.5.0/res/values-as/values.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/res/values-as/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -74,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.10.2/transforms/edd2ca391f1f722475b8979621f86926/transformed/play-services-basement-18.4.0/res/values-as/values.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/res/values-as/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -88,6 +71,23 @@
                         "startOffsets": "5497",
                         "endColumns": "125",
                         "endOffsets": "5618"
+                    }
+                },
+                {
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,156,259,367,472,576,676,805",
+                        "endColumns": "100,102,107,104,103,99,128,100",
+                        "endOffsets": "151,254,362,467,571,671,800,901"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,134",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3472,3573,3676,3784,3889,3993,4093,11866",
+                        "endColumns": "100,102,107,104,103,99,128,100",
+                        "endOffsets": "3568,3671,3779,3884,3988,4088,4217,11962"
                     }
                 }
             ]
