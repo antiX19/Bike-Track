@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array questions_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -1482,6 +1483,7 @@ color foreground_material_light
 color heavy_gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -3107,6 +3109,7 @@ drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_menu
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -3300,6 +3303,7 @@ id below
 id bestChoice
 id blocking
 id bottom
+id bottom2LinearLayout
 id bottomLinearLayout
 id bounce
 id bounceBoth
@@ -3310,10 +3314,13 @@ id btnLogin
 id btnNoSignIn
 id btnNonVisible
 id btnSignIn
+id buttonConfirm
 id buttonContainer
+id buttonMenu
 id buttonPanel
+id buttonSendRecovery
 id buttonUpdatePassword
-id buttonValidateSecretAnswer
+id buttonValidateRecoveryCode
 id buttonVeloTrouve
 id buttonVeloVole
 id cache_measures
@@ -3343,6 +3350,7 @@ id collapseActionView
 id compress
 id confirmPasswordInput
 id confirm_button
+id confirmaccount
 id constraint
 id container
 id content
@@ -3379,7 +3387,6 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
-id donotuse
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3395,9 +3402,11 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextConfirmNewPassword
+id editTextConfirmPassword
+id editTextEmailRecovery
+id editTextModuleName
 id editTextNewPassword
-id editTextSecretAnswer
+id editTextRecoveryCode
 id edit_query
 id edit_text_id
 id elastic
@@ -3409,7 +3418,6 @@ id enterAlways
 id enterAlwaysCollapsed
 id escape
 id etEmailOrUsername
-id etEmailentry
 id etPassword
 id exitUntilCollapsed
 id exit_button
@@ -3472,8 +3480,7 @@ id jumpToStart
 id labeled
 id languageSelector
 id layout
-id layoutNewPassword
-id layoutSecretQuestion
+id layoutRename
 id left
 id leftToRight
 id legacy
@@ -3482,10 +3489,10 @@ id line1
 id line3
 id linear
 id listMode
+id listViewBleDevices
 id list_item
 id logo
 id logoImage
-id lvModules
 id m3_side_sheet
 id main_image
 id mapView
@@ -3551,6 +3558,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_header_title
 id nav_home
+id nav_language
 id nav_logout
 id nav_profile
 id nav_settings
@@ -3615,9 +3623,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id renamefoundBike
 id report_drawn
-id requestResetButton
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3630,6 +3636,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scanBLE
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3715,7 +3722,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textViewSecretQuestion
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3889,12 +3895,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_createaccount
+layout activity_accountsettings
+layout activity_email_input
 layout activity_helper
 layout activity_homepage
 layout activity_login
 layout activity_main
-layout activity_pswd
+layout activity_password_reset
+layout activity_rename
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4028,6 +4036,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btnEco
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -4061,6 +4070,8 @@ string confirm_new_password
 string create_account
 string email_entry
 string email_or_username_entry
+string email_password
+string email_user
 string english_language
 string enter_new_password
 string error_a11y_label
@@ -4070,12 +4081,15 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string find_your_bike
+string get_my_password
 string helper_txt
 string hide_bottom_view_on_scroll_behavior
+string home
 string icon_content_description
 string identifier_reminder
 string item_view_role_description
 string login
+string logout
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4181,7 +4195,6 @@ string mtrl_timepicker_confirm
 string navigation_drawer_close
 string navigation_drawer_open
 string no_sign_in
-string non_visible
 string password
 string password_confirmation
 string password_forgot
@@ -4192,12 +4205,17 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string pin_code
 string pin_code_combined
+string profile
+string question_answer
 string reglementation
+string rename_your_bike
 string renamebike
+string scan
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string settings
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign_in

@@ -4,7 +4,7 @@
             "outputFile": "com.exemple.applicationble.app-mergeDebugResources-2:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/589abfb8e04c980a0217a61a60701a88/transformed/appcompat-1.7.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/68d424fbdccecf3595e2b524b9d6cd8f/transformed/appcompat-1.7.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/46366c9021405fe490a64788c5c06f9d/transformed/material-1.12.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a2ed072200cb9a5b24b9e443d2039b87/transformed/material-1.12.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

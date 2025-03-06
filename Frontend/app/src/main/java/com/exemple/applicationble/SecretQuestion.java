@@ -5,7 +5,7 @@ public class SecretQuestion {
 
     private int id;
 
-    public void SecretQuestion(String question){
+    public void Secretquestion(String question){
         this.question = question;
     }
 

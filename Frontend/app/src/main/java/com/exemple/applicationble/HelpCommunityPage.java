@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import androidx.activity.OnBackPressedDispatcherOwner;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HelpCommunityPage extends AppCompatActivity {
+public class HelpCommunityPage extends AppCompatActivity { //minked to the activity_helper.xml
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helper);

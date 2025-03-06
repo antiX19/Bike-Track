@@ -8,16 +8,24 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_user.png"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_lockon.png.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_lockon.png"
-    },
-    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/menu_nav_menu.xml.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/menu/nav_menu.xml"
     },
     {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_lockon.png.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_lockon.png"
+    },
+    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_logo.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_logo.png"
+    },
+    {
+        "merged": "com.exemple.applicationble.app-debug-4:/drawable_ic_menu.png.flat",
+        "source": "com.exemple.applicationble.app-main-6:/drawable/ic_menu.png"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_password_reset.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_password_reset.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -48,8 +56,20 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_home.png"
     },
     {
+        "merged": "com.exemple.applicationble.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.exemple.applicationble.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_welcome.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_welcome.xml"
+    },
+    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_logo_wobg.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_logo_wobg.png"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_notification.png.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_notification.png"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_button_bg.xml.flat",
@@ -120,16 +140,20 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_logout.png"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/font_rubik_italic_variablefont_wght.ttf.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/font/rubik_italic_variablefont_wght.ttf"
-    },
-    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_login.xml.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_login.xml"
     },
     {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/font_rubik_italic_variablefont_wght.ttf.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/font/rubik_italic_variablefont_wght.ttf"
+    },
+    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_helper_picture.jpg.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/helper_picture.jpg"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_rename.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_rename.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_helper.xml.flat",
@@ -144,24 +168,20 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/edittext_bg_whitebg.xml"
     },
     {
-        "merged": "com.exemple.applicationble.app-debug-4:/layout_activity_welcome.xml.flat",
-        "source": "com.exemple.applicationble.app-main-6:/layout/activity_welcome.xml"
-    },
-    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_settings.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_settings.png"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_createaccount.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_createaccount.xml"
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_email_input.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_email_input.xml"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_accountsettings.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_accountsettings.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_pswd.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_pswd.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_homepage.xml.flat",
@@ -194,9 +214,5 @@
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/raw_policy_privacy.txt.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/raw/policy_privacy.txt"
-    },
-    {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_notification.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_notification.xml"
     }
 ]

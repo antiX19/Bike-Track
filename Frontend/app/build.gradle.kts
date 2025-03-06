@@ -25,6 +25,13 @@ android {
             )
         }
     }
+
+    /*resources {
+        excludes += "META-INF/NOTICE.md"
+        excludes += "META-INF/LICENSE.md"
+
+    }*/
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -32,7 +39,8 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.android.mail)
+    implementation(libs.android.activation)
     implementation(libs.okhttp)
     implementation(libs.conscrypt.android)
     implementation(libs.retrofit)

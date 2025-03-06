@@ -54,38 +54,38 @@
 30-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:25:9-37
 31
 32    <uses-feature
-32-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
+32-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
 33        android:glEsVersion="0x00020000"
-33-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
+33-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
 34        android:required="true" />
-34-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
+34-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
 35
 36    <queries>
-36-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
+36-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
 37
 38        <!-- Needs to be explicitly declared on Android R+ -->
 39        <package android:name="com.google.android.apps.maps" />
-39-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
-39-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
+39-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
+39-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
 40    </queries>
 41
 42    <permission
-42-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+42-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
 43        android:name="com.exemple.applicationble.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-43-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+43-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
 44        android:protectionLevel="signature" />
-44-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+44-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
 45
 46    <uses-permission android:name="com.exemple.applicationble.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-46-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
-46-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+46-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+46-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 47
 48    <application
 48-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:27:5-58:19
 49        android:allowBackup="true"
 49-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:28:9-35
 50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-50-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/605541e395bbd29edf6b03a3a8fad186/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+50-->[androidx.core:core:1.13.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/b34feffe8bbe78d47573f36c7f37b51b/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 51        android:dataExtractionRules="@xml/data_extraction_rules"
 51-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:29:9-65
 52        android:debuggable="true"
@@ -106,8 +106,8 @@
 61        <!-- Activité principale avec intent filter -->
 62        <activity
 62-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:39:9-46:20
-63            android:name="com.exemple.applicationble.HomeActivity"
-63-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:13-41
+63            android:name="com.exemple.applicationble.HomePageActivity"
+63-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:13-45
 64            android:exported="true" >
 64-->/home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:41:13-36
 65            <intent-filter>
@@ -142,91 +142,91 @@
 80
 81        <!-- Needs to be explicitly declared on P+ -->
 82        <uses-library
-82-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
+82-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
 83            android:name="org.apache.http.legacy"
-83-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
+83-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
 84            android:required="false" />
-84-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/100135aad56c87880d6c84821d32ace7/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
+84-->[com.google.android.gms:play-services-maps:19.1.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48a4cc8d84fecf15c984bba418f7023b/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
 85
 86        <activity
-86-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+86-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a43c8a90be45260597b98bcb7f19e537/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
 87            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-87-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+87-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a43c8a90be45260597b98bcb7f19e537/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
 88            android:exported="false"
-88-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+88-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a43c8a90be45260597b98bcb7f19e537/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
 89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-89-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/5eec655681b94344cb1cd64d405b7b64/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+89-->[com.google.android.gms:play-services-base:18.5.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a43c8a90be45260597b98bcb7f19e537/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
 90
 91        <meta-data
-91-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+91-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05b186dd25947e3ff9c28fd85ea83bc9/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
 92            android:name="com.google.android.gms.version"
-92-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+92-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05b186dd25947e3ff9c28fd85ea83bc9/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
 93            android:value="@integer/google_play_services_version" />
-93-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/73f008bf65c8622f6ea692700293009d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+93-->[com.google.android.gms:play-services-basement:18.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/05b186dd25947e3ff9c28fd85ea83bc9/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
 94
 95        <provider
-95-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+95-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
 96            android:name="androidx.startup.InitializationProvider"
-96-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+96-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
 97            android:authorities="com.exemple.applicationble.androidx-startup"
-97-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+97-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
 98            android:exported="false" >
-98-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+98-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 99            <meta-data
-99-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+99-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
 100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-100-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+100-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 101                android:value="androidx.startup" />
-101-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/afc1d35e0cc07340a0ccb143e44a5a77/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+101-->[androidx.emoji2:emoji2:1.3.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/f0510fea7dccf17df91194dce5bd37f1/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 102            <meta-data
-102-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+102-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/bde1e97fb462e4568f3beebf54d88bf2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
 103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-103-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/bde1e97fb462e4568f3beebf54d88bf2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 104                android:value="androidx.startup" />
-104-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/48ae6160531ace8534bcd3b7aa0f1a98/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+104-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/bde1e97fb462e4568f3beebf54d88bf2/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
 105            <meta-data
-105-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
 106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-106-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
 107                android:value="androidx.startup" />
-107-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
 108        </provider>
 109
 110        <receiver
-110-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
 111            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
 112            android:directBootAware="false"
-112-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
 113            android:enabled="true"
-113-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
 114            android:exported="true"
-114-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
 115            android:permission="android.permission.DUMP" >
-115-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 116            <intent-filter>
-116-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
 117                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 118            </intent-filter>
 119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
 120                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
 121            </intent-filter>
 122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
 123                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
 124            </intent-filter>
 125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
 126                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/480fc98ecd04866c1f1886625035c97b/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/e5e4ec0830cb20f638de6fefa880015e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
 127            </intent-filter>
 128        </receiver>
 129    </application>

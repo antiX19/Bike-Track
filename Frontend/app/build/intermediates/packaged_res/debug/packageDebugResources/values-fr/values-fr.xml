@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="activity_main_title">Paramètres de l\'application</string>
     <string name="app_name">BikeTrack</string>
-    <string name="welcome_app_ms">Bienvenue dans l\'application BikeTrack</string>
+    <string name="welcome_app_msg">Bienvenue dans l\'application BikeTrack</string>
 </resources>

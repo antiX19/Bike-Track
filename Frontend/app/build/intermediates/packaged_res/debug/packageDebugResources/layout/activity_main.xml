@@ -55,16 +55,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <ListView
-            android:id="@+id/lvModules"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:divider="@android:color/darker_gray"
-            android:dividerHeight="1dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
         <GridLayout
             android:id="@+id/buttonContainer"
@@ -77,35 +67,65 @@
             android:rowCount="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lvModules">
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
 
 
             <Button
                 android:id="@+id/btnNonVisible"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_columnWeight="1"
-                android:text="@string/non_visible"
-                android:layout_margin="4dp" />
+                android:layout_margin="4dp"
+                android:text="@string/btnEco" />
 
             <Button
                 android:id="@+id/buttonVeloVole"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_columnWeight="1"
-                android:text="@string/bike_stolen"
-                android:padding="8dp"
-                android:layout_margin="4dp" />
+                android:layout_margin="4dp"
+                android:text="@string/bike_stolen" />
 
             <Button
                 android:id="@+id/buttonVeloTrouve"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_columnWeight="1"
                 android:text="@string/bike_found"
                 android:layout_margin="4dp" />
 
         </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonContainer">
+
+            <ListView
+                android:id="@+id/listViewBleDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <EditText
+                android:id="@+id/scanBLE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="@string/scan"
+                android:inputType="text"
+                android:clickable="true"
+                android:maxLength="12" />
+        </LinearLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -118,5 +138,16 @@
         android:layout_gravity="end"
         app:menu="@menu/nav_menu"
         app:headerLayout="@layout/nav_header" />
+
+    <ImageButton
+        android:id="@+id/buttonMenu"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

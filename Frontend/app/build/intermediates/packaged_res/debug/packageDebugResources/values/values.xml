@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="questions_array">
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+    </string-array>
     <color name="Title">#1A202C</color>
     <color name="apptheme">#263ED2</color>
     <color name="black">#FF000000</color>
     <color name="heavy_gray">#A69E97</color>
+    <color name="ic_launcher_background">#B89797</color>
     <color name="light_gray">#F5F5F5</color>
     <color name="white">#FFFFFFFF</color>
     <string name="Send_secret_question">Answer to a secret question</string>
-    <string name="activity_main_title">Paramètres de l\'application</string>
+    <string name="activity_main_title">Profil</string>
     <string name="activity_pswd_ressource_text">Please enter the email address you\'d like your password reset information sent to</string>
     <string name="answer_to_security_question">Answer to Security Question</string>
     <string name="app_name">BikeTrack</string>
@@ -15,31 +21,41 @@
     <string name="back_to_login">Back To Login</string>
     <string name="bike_found">I found my bike</string>
     <string name="bike_logo">bike_logo</string>
-    <string name="bike_stolen">My bike is bike stolen</string>
+    <string name="bike_stolen">My bike has been stolen</string>
+    <string name="btnEco">Eco</string>
     <string name="confirm_new_password">Confirm new password</string>
     <string name="create_account">Create an account</string>
     <string name="email_entry">Enter email address\n</string>
     <string name="email_or_username_entry">Email or Username</string>
+    <string name="email_password">""</string>
+    <string name="email_user">""</string>
     <string name="english_language">English ▼</string>
     <string name="enter_new_password">Enter new password</string>
     <string name="exit">Exit</string>
     <string name="find_your_bike">Find your bike</string>
+    <string name="get_my_password">Get my password</string>
     <string name="helper_txt">Thank you for helping the community</string>
+    <string name="home">Home</string>
     <string name="identifier_reminder">Remember me</string>
     <string name="login">Login</string>
+    <string name="logout">Log out</string>
     <string name="map_view_description">user map view position</string>
     <string name="menu">Menu</string>
     <string name="navigation_drawer_close">Fermer le menu</string>
     <string name="navigation_drawer_open">Ouvrir le menu</string>
     <string name="no_sign_in">Help the community</string>
-    <string name="non_visible">Non Visible</string>
     <string name="password">Password</string>
     <string name="password_confirmation">Confirm password</string>
     <string name="password_forgot">Forgot password ?</string>
     <string name="pin_code">PIN Code</string>
     <string name="pin_code_combined">PIN Code (6 digits max, 0–9)</string>
+    <string name="profile">Profile</string>
+    <string name="question_answer">Question answer</string>
     <string name="reglementation">By clicking the Sign up button, you agree to our <u>Terms and Condition</u> and <u>Policy Privacy</u>.</string>
+    <string name="rename_your_bike">Rename your bike</string>
     <string name="renamebike">Rename your bike</string>
+    <string name="scan">Scan</string>
+    <string name="settings">Settings</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
     <string name="skip">Skip</string>

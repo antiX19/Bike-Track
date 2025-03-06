@@ -32,7 +32,7 @@ public class HomePageActivity extends AppCompatActivity{
                 startActivity(intent);
 
             } else {
-                Intent intent = new Intent(HomePageActivity.this, ConnexionActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
 

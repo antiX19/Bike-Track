@@ -1,9 +1,6 @@
 package com.exemple.applicationble;
 
-import static com.exemple.applicationble.ConnexionActivity.identifier;
-import static com.exemple.applicationble.IdentificationActivity.radioQuestion1;
-import static com.exemple.applicationble.IdentificationActivity.radioQuestion2;
-import static com.exemple.applicationble.IdentificationActivity.radioQuestion3;
+import static com.exemple.applicationble.LoginActivity.identifier;
 
 import android.Manifest;
 import android.content.Intent;
@@ -14,10 +11,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.activity.OnBackPressedDispatcherOwner;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -28,11 +23,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonVelo, buttonCommu, buttonConnexion;
-    private static final int PERMISSION_REQUEST_CODE = 1;
-
+    private Button buttonVelo, buttonConnexion;
     public static List<String> question = new ArrayList<>();
-
     public static  boolean  isLoggedIn;
 
     @Override
@@ -42,28 +34,20 @@ public class MainActivity extends AppCompatActivity {
         isLoggedIn = prefs.getBoolean("isLoggedIn", false);
         if (isLoggedIn && identifier != null) {
             // Si connecté, rediriger directement vers l'interface principale (HomeActivity)
-            Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
+            Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
             startActivity(intent);
             finish();
             return;
         }
-        ImageView backButton = findViewById(R.id.backButton);
-        demande();
+        findlocation();
         setContentView(R.layout.activity_main);
-        buttonVelo = findViewById(R.id.button_velo);
-        buttonCommu = findViewById(R.id.button_commu);
-        buttonConnexion = findViewById(R.id.button_connexion);
 
-        // Demande des autorisations nécessaires
-        //requestPermissions();
-
-        buttonCommu.setOnClickListener(v -> startForegroundService());
         buttonVelo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startForegroundService();
                 // Lancement de l'activité d'identification pour "J'ai un vélo";
-                Intent intent = new Intent(MainActivity.this, IdentificationActivity.class);
+                Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,41 +56,43 @@ public class MainActivity extends AppCompatActivity {
         buttonConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startForegroundService();
+                startForegroundService();
                 // Lancement de l'activité de connexion
-                Intent intent = new Intent(MainActivity.this, ConnexionActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
-        backButton.setOnClickListener(v -> {
-            if (MainActivity.this instanceof OnBackPressedDispatcherOwner) {
-                OnBackPressedDispatcherOwner dispatcherOwner = (OnBackPressedDispatcherOwner) MainActivity.this;
-                dispatcherOwner.getOnBackPressedDispatcher().onBackPressed();
-            }
-        });
-    }
-private void demande(){
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) { // Android 13+
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.POST_NOTIFICATIONS}, 102);
-        }
-    }
 
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) { // Android 10+
-        ActivityCompat.requestPermissions(this, new String[]{
-                Manifest.permission.ACCESS_FINE_LOCATION,
-                Manifest.permission.ACCESS_BACKGROUND_LOCATION,
-                Manifest.permission.FOREGROUND_SERVICE_LOCATION
-        }, 101);
-    } else {
-        ActivityCompat.requestPermissions(this, new String[]{
-                Manifest.permission.ACCESS_FINE_LOCATION
+        // Autres listeners pour les autres boutons...
+    }
+    private void findlocation(){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) { // Android 13+
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS}, 102);
+            }
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) { // Android 10+
+            ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+                    Manifest.permission.FOREGROUND_SERVICE_LOCATION,
+                    Manifest.permission.POST_NOTIFICATIONS
+            }, 101);
+        } else {
+            ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+                    Manifest.permission.FOREGROUND_SERVICE_LOCATION,
+                    Manifest.permission.POST_NOTIFICATIONS
             }, 101);
         }
 
     }
+
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -119,6 +105,8 @@ private void demande(){
             }
         }
     }
+
+
     public void startForegroundService() {
         Intent serviceIntent = new Intent(this, ForegroundService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -126,5 +114,6 @@ private void demande(){
         } else {
             startService(serviceIntent);
         }
+
     }
 }

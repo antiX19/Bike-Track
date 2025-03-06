@@ -60,7 +60,7 @@
 
         <!-- Activité principale avec intent filter -->
         <activity
-            android:name="com.exemple.applicationble.HomeActivity"
+            android:name="com.exemple.applicationble.HomePageActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

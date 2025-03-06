@@ -19,13 +19,13 @@ public interface ApiService {
    Call<VeloData> postVeloData(@Body VeloData veloData);
 
     @PUT("velo/vole/{ps_mod_UUID}") // {ps_mod_UUID} est un paramètre dynamique
-    Call<Velostatus> postVelostatus(@Path("ps_mod_UUID") String psModUuid, @Body Velostatus velostatus);
+    Call<VeloStatus> postVelostatus(@Path("ps_mod_UUID") String psModUuid, @Body VeloStatus velostatus);
 
     @PUT("velo/retrouve/{ps_mod_UUID}") // {ps_mod_UUID} est un paramètre dynamique
-    Call<Velostatustrue> postVelostatustrue(@Path("ps_mod_UUID") String psModUid, @Body Velostatustrue Velostatustrue);
+    Call<VeloStatusTrue> postVelostatustrue(@Path("ps_mod_UUID") String psModUid, @Body VeloStatusTrue Velostatustrue);
 
     @GET("velo/vole") // Pour envoyer des données
-    Call<List<Velostatus>> getVelostatus();
+    Call<List<VeloStatus>> getVelostatus();
 
 
     @POST("register2")
@@ -34,10 +34,10 @@ public interface ApiService {
 
     @POST("/reset-password/question")
         // Pour envoyer des données
-    Call<Resetpsw> postNewpsw(@Body Resetpsw resetpsw);
+    Call<ResetPswd> postNewpsw(@Body ResetPswd resetPswd);
 
     @GET("users") // Pour envoyer des données
-    Call<List<Usersdata2>> getUsersData();
+    Call<List<UsersData2>> getUsersData();
 
     @POST("login") // Remplacez "login" par le chemin attendu par votre serveur
     Call<LoginData> loginUser(@Body LoginData loginData);

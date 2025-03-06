@@ -1,7 +1,6 @@
 package com.exemple.applicationble;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +17,7 @@ public class FirstConnectionActivity extends AppCompatActivity {
         Button no_signin = findViewById(R.id.btnNoSignIn);
 
         signin.setOnClickListener(view -> {
-                    Intent intent = new Intent(FirstConnectionActivity.this, IdentificationActivity.class);
+                    Intent intent = new Intent(FirstConnectionActivity.this, CreateAccountActivity.class);
                     startActivity(intent);
 
         });

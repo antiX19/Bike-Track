@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">BikeTrack</string>
     <string name="welcome_app_msg">Bienvenue dans l\'application BikeTrack</string>
+    <string name="activity_main_title">Paramètres de l\'application</string>
 </resources>
