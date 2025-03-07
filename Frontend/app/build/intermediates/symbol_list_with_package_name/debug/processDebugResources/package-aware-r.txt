@@ -3309,16 +3309,17 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnEco
 id btnFindBike
 id btnLogin
 id btnNoSignIn
-id btnNonVisible
 id btnSignIn
 id buttonConfirm
 id buttonContainer
 id buttonMenu
 id buttonPanel
 id buttonSendRecovery
+id buttonShowPin
 id buttonUpdatePassword
 id buttonValidateRecoveryCode
 id buttonVeloTrouve
@@ -4072,6 +4073,7 @@ string email_entry
 string email_or_username_entry
 string email_password
 string email_user
+string energie_save
 string english_language
 string enter_new_password
 string error_a11y_label
@@ -4194,6 +4196,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string navigation_drawer_close
 string navigation_drawer_open
+string no_energy_save_mode
 string no_sign_in
 string password
 string password_confirmation
@@ -4216,6 +4219,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string settings
+string show_pin
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign_in

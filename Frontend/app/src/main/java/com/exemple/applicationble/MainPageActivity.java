@@ -31,9 +31,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.PopupMenu;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -49,9 +49,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainPageActivity {
+public class MainPageActivity extends AppCompatActivity {
 
-    private Button buttonVeloVole, buttonVeloTrouve;
+    private Button buttonVeloVole, buttonVeloTrouve, buttonEco;
     private EditText Scanner;
     private ListView lvModules;
     // Liste pour afficher le nom et le statut du périphérique
@@ -64,11 +64,9 @@ public class MainPageActivity {
     private FusedLocationProviderClient fusedLocationClient;
     private LocationCallback locationCallback;
     private LocationRequest locationRequest;
-
     public static boolean vole = false;
     String deviceName;
     String baseName;
-
     // Variables pour le scan BLE
     private BluetoothAdapter mBluetoothAdapter;
     private boolean new_status;
@@ -97,12 +95,10 @@ public class MainPageActivity {
         // Récupération de la ListView
         Scanner = findViewById(R.id.scanBLE);
         lvModules = findViewById(R.id.listViewBleDevices);
-
+        Button buttonShowPin = findViewById(R.id.buttonShowPin);
         ImageButton buttonMenu = findViewById(R.id.buttonMenu);
-
         // Désactivation initiale du bouton "Non Visible" (maintenant "économie d'énergie")
         buttonEco.setEnabled(false);
-        // Changement du libellé du bouton "Non Visible"
 
         if(vole){
             buttonVeloVole.setEnabled(false); // Désactiver "Vélo Volé"
@@ -116,178 +112,135 @@ public class MainPageActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, deviceList);
         lvModules.setAdapter(adapter);
 
-        Scanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startBleScan();
-                Toast.makeText(MainPageActivity.this, "Scan BLE lancé", Toast.LENGTH_SHORT).show();
-            }
+        Scanner.setOnClickListener(v -> {
+            startBleScan();
+            Toast.makeText(MainPageActivity.this, "Scan BLE lancé", Toast.LENGTH_SHORT).show();
         });
 
-        // Configuration du bouton menu
-        buttonMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(MainPageActivity.this, v);
-                popupMenu.getMenu().add("Sign out");
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(android.view.MenuItem item) {
-                        if ("Sign out".equals(item.getTitle())) {
-                            SharedPreferences prefs = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
-                            SharedPreferences.Editor editor = prefs.edit();
-                            editor.remove("isLoggedIn");
-                            editor.apply();
-                            Intent intent = new Intent(MainPageActivity.this, LoginActivity.class);
-                            startActivity(intent);
-                            finish();
-                            return true;
-                        }
-                        return false;
-                    }
-                });
-                popupMenu.show();
-            }
+        // Configuration du bouton "Show PIN" pour afficher le PIN dans un Toast pendant 1 seconde
+        buttonShowPin.setOnClickListener(v -> {
+            final Toast toast = Toast.makeText(MainPageActivity.this, "PIN: " + ps_mod_pin, Toast.LENGTH_SHORT);
+            toast.show();
+            new Handler().postDelayed(toast::cancel, 1000);
         });
-        buttonEco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(bool){
-                    buttonEco.setText("Economie d'énergie");
-                    if (currentConnectedDevice != null && mBluetoothGatt != null) {
-                        Handler handler = new Handler();
-                        handler.postDelayed(() -> sendAtCommand("AT+POWE3"), 0);
-                        handler.postDelayed(() -> sendAtCommand("AT+PWRM1"), 200);
-                        handler.postDelayed(() -> sendAtCommand("AT+ADVI5"), 400);
 
-                    } else {
-                        Toast.makeText(HomeActivity.this, "Aucun module connecté", Toast.LENGTH_SHORT).show();
-                    }
-                }else{
-                    buttonEco.setText("Mode normal");
-                    if (currentConnectedDevice != null && mBluetoothGatt != null) {
-                        Handler handler = new Handler();
-                        handler.postDelayed(() -> sendAtCommand("AT+POWE2"), 0);
-                        handler.postDelayed(() -> sendAtCommand("AT+ADVIA"), 200);
-                        handler.postDelayed(() -> sendAtCommand("AT+PWRM0"), 400);
+        buttonEco.setOnClickListener(v -> {
+            if(bool){
+                buttonEco.setText(R.string.energie_save);
+                if (currentConnectedDevice != null && mBluetoothGatt != null) {
+                    Handler handler = new Handler();
+                    handler.postDelayed(() -> sendAtCommand("AT+POWE3"), 0);
+                    handler.postDelayed(() -> sendAtCommand("AT+PWRM1"), 200);
+                    handler.postDelayed(() -> sendAtCommand("AT+ADVI5"), 400);
 
-                        //buttonEco.setEnabled(false);
-                    } else {
-                        Toast.makeText(HomeActivity.this, "Aucun module connecté", Toast.LENGTH_SHORT).show();
-                    }
-
+                } else {
+                    Toast.makeText(MainPageActivity.this, "Aucun module connecté", Toast.LENGTH_SHORT).show();
                 }
-                bool = !bool;
+            }else{
+                buttonEco.setText(R.string.no_energy_save_mode);
+                if (currentConnectedDevice != null && mBluetoothGatt != null) {
+                    Handler handler = new Handler();
+                    handler.postDelayed(() -> sendAtCommand("AT+POWE2"), 0);
+                    handler.postDelayed(() -> sendAtCommand("AT+ADVIA"), 200);
+                    handler.postDelayed(() -> sendAtCommand("AT+PWRM0"), 400);
+                } else {
+                    Toast.makeText(MainPageActivity.this, "Aucun module connecté", Toast.LENGTH_SHORT).show();
+                }
             }
+            bool = !bool;
         });
-
-
-
 
         Log.d("UUID_VERIF", "L'UUID est : "+ ps_mod_UUID);
         // Bouton "Vélo Volé"
-        buttonVeloVole.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                monitoringServiceIntent = new Intent(HomeActivity.this, MonitoringService.class);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    startForegroundService(monitoringServiceIntent);
-                } else {
-                    startService(monitoringServiceIntent);
-                }
-                vole = true;
-                String pseuo = pseudo_conn;
-                new_status = true;
-                poststatus(new_status);
-                Toast.makeText(HomeActivity.this, "Bouton Vélo Volé cliqué", Toast.LENGTH_SHORT).show();
-                buttonVeloVole.setEnabled(false); // Désactiver "Vélo Volé"
-                buttonVeloTrouve.setEnabled(true); // Activer "Vélo Trouvé"
+        buttonVeloVole.setOnClickListener(v -> {
+            monitoringServiceIntent = new Intent(MainPageActivity.this, MonitoringService.class);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                startForegroundService(monitoringServiceIntent);
+            } else {
+                startService(monitoringServiceIntent);
             }
+            vole = true;
+            new_status = true;
+            poststatus(new_status);
+            Toast.makeText(MainPageActivity.this, "Bouton Vélo Volé cliqué", Toast.LENGTH_SHORT).show();
+            buttonVeloVole.setEnabled(false); // Désactiver "Vélo Volé"
+            buttonVeloTrouve.setEnabled(true); // Activer "Vélo Trouvé"
         });
 
         // Bouton "Vélo Trouvé"
-        buttonVeloTrouve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vole = false;
-                String pseuo = pseudo_conn;
-                new_status = false;
-                poststatustrue(new_status);
-                Toast.makeText(HomeActivity.this, "Bouton Vélo Trouvé cliqué", Toast.LENGTH_SHORT).show();
-                stopService(monitoringServiceIntent);
-                buttonVeloTrouve.setEnabled(false);
-                buttonVeloVole.setEnabled(true);
-            }
+        buttonVeloTrouve.setOnClickListener(v -> {
+            vole = false;
+            new_status = false;
+            poststatustrue(new_status);
+            Toast.makeText(MainPageActivity.this, "Bouton Vélo Trouvé cliqué", Toast.LENGTH_SHORT).show();
+            stopService(monitoringServiceIntent);
+            buttonVeloTrouve.setEnabled(false);
+            buttonVeloVole.setEnabled(true);
         });
 
         // Configuration de la ListView pour la sélection d'un module BLE
-        lvModules.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                BluetoothDevice selectedDevice = bleDeviceList.get(position);
-                SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE);
-                String storedPin = sharedPreferences.getString("PIN_CODE", null);
-                if (storedPin != null) {
-                    Log.d("PIN", "Stored PIN is: " + storedPin);
-                } else {
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putString("PIN_CODE", PIN);
-                    editor.apply();
-                    Log.d("PIN", "Stored PIN is: " + PIN);
-                }
-                // Vérifier que l'appareil est déjà apparié
-                if (selectedDevice.getBondState() != BluetoothDevice.BOND_BONDED) {
-                    try {
-                        Method setPinMethod = selectedDevice.getClass().getMethod("setPin", byte[].class);
-                        byte[] pinBytes = String.valueOf(PIN).getBytes("UTF-8");
-                        Boolean result = (Boolean) setPinMethod.invoke(selectedDevice, new Object[]{pinBytes});
-                        if (result != null && result) {
-                            Toast.makeText(HomeActivity.this, "PIN auto défini: " + PIN, Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(HomeActivity.this, "Échec de la définition du PIN", Toast.LENGTH_SHORT).show();
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Toast.makeText(HomeActivity.this, "Erreur lors de la définition du PIN", Toast.LENGTH_SHORT).show();
-                    }
-                    // Lance le processus d'appariement et informe l'utilisateur
-                    selectedDevice.createBond();
-                    Toast.makeText(HomeActivity.this, "Module non connecté. Veuillez entrer le code PIN sur le module.", Toast.LENGTH_LONG).show();
-                    return;
-                } else {
-                    // Si l'appareil est déjà apparié, procéder à la connexion
-                    if (currentConnectedDevice != null &&
-                            currentConnectedDevice.getAddress().equals(selectedDevice.getAddress())) {
-                        if (mBluetoothGatt != null) {
-                            mBluetoothGatt.disconnect();
-                            mBluetoothGatt.close();
-                            mBluetoothGatt = null;
-                        }
-                        currentConnectedDevice = null;
-                        Toast.makeText(HomeActivity.this, "Déconnecté du module", Toast.LENGTH_SHORT).show();
-                        updateDeviceStatus(selectedDevice, false);
-                        buttonEco.setEnabled(false);
+        lvModules.setOnItemClickListener((parent, view, position, id) -> {
+            BluetoothDevice selectedDevice = bleDeviceList.get(position);
+            SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE);
+            String storedPin = sharedPreferences.getString("PIN_CODE", null);
+            if (storedPin != null) {
+                Log.d("PIN", "Stored PIN is: " + storedPin);
+            } else {
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("PIN_CODE", PIN);
+                editor.apply();
+                Log.d("PIN", "Stored PIN is: " + PIN);
+            }
+            // Vérifier que l'appareil est déjà apparié
+            if (selectedDevice.getBondState() != BluetoothDevice.BOND_BONDED) {
+                try {
+                    Method setPinMethod = selectedDevice.getClass().getMethod("setPin", byte[].class);
+                    byte[] pinBytes = String.valueOf(PIN).getBytes("UTF-8");
+                    Boolean result = (Boolean) setPinMethod.invoke(selectedDevice, new Object[]{pinBytes});
+                    if (result != null && result) {
+                        Toast.makeText(MainPageActivity.this, "PIN auto défini: " + PIN, Toast.LENGTH_LONG).show();
                     } else {
-                        if (currentConnectedDevice != null && mBluetoothGatt != null) {
-                            mBluetoothGatt.disconnect();
-                            mBluetoothGatt.close();
-                            mBluetoothGatt = null;
-                        }
-                        mBluetoothGatt = selectedDevice.connectGatt(HomeActivity.this, false, mGattCallback);
-                        currentConnectedDevice = selectedDevice;
-                        Toast.makeText(HomeActivity.this, "Connexion en cours à " +
-                                        ((selectedDevice.getName() != null && !selectedDevice.getName().isEmpty())
-                                                ? selectedDevice.getName() : selectedDevice.getAddress()),
-                                Toast.LENGTH_SHORT).show();
-                        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled() && mBluetoothLeScanner != null) {
-                            mBluetoothLeScanner.stopScan(mScanCallback);
-                        }
+                        Toast.makeText(MainPageActivity.this, "Échec de la définition du PIN", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(MainPageActivity.this, "Erreur lors de la définition du PIN", Toast.LENGTH_SHORT).show();
+                }
+                // Lance le processus d'appariement et informe l'utilisateur
+                selectedDevice.createBond();
+                Toast.makeText(MainPageActivity.this, "Module non connecté. Veuillez entrer le code PIN sur le module.", Toast.LENGTH_LONG).show();
+                return;
+            } else {
+                // Si l'appareil est déjà apparié, procéder à la connexion
+                if (currentConnectedDevice != null &&
+                        currentConnectedDevice.getAddress().equals(selectedDevice.getAddress())) {
+                    if (mBluetoothGatt != null) {
+                        mBluetoothGatt.disconnect();
+                        mBluetoothGatt.close();
+                        mBluetoothGatt = null;
+                    }
+                    currentConnectedDevice = null;
+                    Toast.makeText(MainPageActivity.this, "Déconnecté du module", Toast.LENGTH_SHORT).show();
+                    updateDeviceStatus(selectedDevice, false);
+                    buttonEco.setEnabled(false);
+                } else {
+                    if (currentConnectedDevice != null && mBluetoothGatt != null) {
+                        mBluetoothGatt.disconnect();
+                        mBluetoothGatt.close();
+                        mBluetoothGatt = null;
+                    }
+                    mBluetoothGatt = selectedDevice.connectGatt(MainPageActivity.this, false, mGattCallback);
+                    currentConnectedDevice = selectedDevice;
+                    Toast.makeText(MainPageActivity.this, "Connexion en cours à " +
+                                    ((selectedDevice.getName() != null && !selectedDevice.getName().isEmpty())
+                                            ? selectedDevice.getName() : selectedDevice.getAddress()),
+                            Toast.LENGTH_SHORT).show();
+                    if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled() && mBluetoothLeScanner != null) {
+                        mBluetoothLeScanner.stopScan(mScanCallback);
                     }
                 }
             }
         });
-        ;
-
         // Démarrer le scan BLE
         startBleScan();
     }
@@ -348,7 +301,6 @@ public class MainPageActivity {
                 });
             }
         }
-
         @Override
         public void onScanFailed(int errorCode) {
             runOnUiThread(() ->
@@ -360,33 +312,27 @@ public class MainPageActivity {
     private BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(final BluetoothGatt gatt, int status, int newState) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    if (newState == BluetoothProfile.STATE_CONNECTED) {
-                        Toast.makeText(MainPageActivity.this, "Connecté au module BLE", Toast.LENGTH_SHORT).show();
-                        // Activation du bouton "économie d'énergie" dès que le module est connecté
-                        buttonEco.setEnabled(true);
-                        // Lancer la découverte des services
-                        gatt.discoverServices();
-                    } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
-                        Toast.makeText(MainPageActivity.this, "Déconnecté du module BLE", Toast.LENGTH_SHORT).show();
-                        updateDeviceStatus(gatt.getDevice(), false);
-                        // Désactivation du bouton en cas de déconnexion
-                        buttonEco.setEnabled(false);
-                    }
+            runOnUiThread(() -> {
+                if (newState == BluetoothProfile.STATE_CONNECTED) {
+                    Toast.makeText(MainPageActivity.this, "Connecté au module BLE", Toast.LENGTH_SHORT).show();
+                    // Activation du bouton "économie d'énergie" dès que le module est connecté
+                    buttonEco.setEnabled(true);
+                    // Lancer la découverte des services
+                    gatt.discoverServices();
+                } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
+                    Toast.makeText(MainPageActivity.this, "Déconnecté du module BLE", Toast.LENGTH_SHORT).show();
+                    updateDeviceStatus(gatt.getDevice(), false);
+                    // Désactivation du bouton en cas de déconnexion
+                    buttonEco.setEnabled(false);
                 }
             });
         }
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(MainPageActivity.this, "Services découverts", Toast.LENGTH_SHORT).show();
-                        updateDeviceStatus(gatt.getDevice(), true);
-                    }
+                runOnUiThread(() -> {
+                    Toast.makeText(MainPageActivity.this, "Services découverts", Toast.LENGTH_SHORT).show();
+                    updateDeviceStatus(gatt.getDevice(), true);
                 });
             } else {
                 runOnUiThread(new Runnable() {
@@ -453,23 +399,23 @@ public class MainPageActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);
-        Velostatus velostatus = new Velostatus(ps_mod_Id, status);
-        Call<Velostatus> call = apiService.postVelostatus(ps_mod_UUID, velostatus);
+        VeloStatus velostatus = new VeloStatus(ps_mod_Id, status);
+        Call<VeloStatus> call = apiService.postVelostatus(ps_mod_UUID, velostatus);
         Log.d("serveur", "Requête envoyée " + call.request().toString() + " And veloData is " + velostatus);
-        call.enqueue(new Callback<Velostatus>() {
+        call.enqueue(new Callback<VeloStatus>() {
             @Override
-            public void onResponse(Call<Velostatus> call, Response<Velostatus> response) {
+            public void onResponse(Call<VeloStatus> call, Response<VeloStatus> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(HomeActivity.this, "Données envoyées avec succès", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainPageActivity.this, "Données envoyées avec succès", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(HomeActivity.this, "Erreur côté serveur : " + response.message(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainPageActivity.this, "Erreur côté serveur : " + response.message(), Toast.LENGTH_SHORT).show();
                     Log.e("serveur", "Erreur côté serveur : " + response.message());
                 }
             }
 
             @Override
-            public void onFailure(Call<Velostatus> call, Throwable t) {
-                Toast.makeText(HomeActivity.this, "Erreur de connexion : " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<VeloStatus> call, Throwable t) {
+                Toast.makeText(MainPageActivity.this, "Erreur de connexion : " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 Log.e("test2", "Erreur de connexion", t);
             }
         });
@@ -481,23 +427,23 @@ public class MainPageActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);
-        Velostatustrue velostatustrue = new Velostatustrue(ps_mod_Id, status);
-        Call<Velostatustrue> call = apiService.postVelostatustrue(ps_mod_UUID, velostatustrue);
+        VeloStatusTrue velostatustrue = new VeloStatusTrue(ps_mod_Id, status);
+        Call<VeloStatusTrue> call = apiService.postVelostatustrue(ps_mod_UUID, velostatustrue);
         Log.d("serveur", "Requête envoyée " + call.request().toString() + " And veloData is " + velostatustrue);
-        call.enqueue(new Callback<Velostatustrue>() {
+        call.enqueue(new Callback<VeloStatusTrue>() {
             @Override
-            public void onResponse(Call<Velostatustrue> call, Response<Velostatustrue> response) {
+            public void onResponse(Call<VeloStatusTrue> call, Response<VeloStatusTrue> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(HomeActivity.this, "Données envoyées avec succès", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainPageActivity.this, "Données envoyées avec succès", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(HomeActivity.this, "Erreur côté serveur : " + response.message(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainPageActivity.this, "Erreur côté serveur : " + response.message(), Toast.LENGTH_SHORT).show();
                     Log.e("serveur", "Erreur côté serveur : " + response.message());
                 }
             }
 
             @Override
-            public void onFailure(Call<Velostatustrue> call, Throwable t) {
-                Toast.makeText(HomeActivity.this, "Erreur de connexion : " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<VeloStatusTrue> call, Throwable t) {
+                Toast.makeText(MainPageActivity.this, "Erreur de connexion : " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 Log.e("test2", "Erreur de connexion", t);
             }
         });

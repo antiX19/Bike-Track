@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+
     namespace = "com.exemple.applicationble"
     compileSdk = 35
 
@@ -26,11 +27,12 @@ android {
         }
     }
 
-    /*resources {
-        excludes += "META-INF/NOTICE.md"
-        excludes += "META-INF/LICENSE.md"
+    packaging {
+        resources.excludes.add("META-INF/NOTICE.md")
+        resources.excludes.add("META-INF/LICENSE.md")
+    }
 
-    }*/
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

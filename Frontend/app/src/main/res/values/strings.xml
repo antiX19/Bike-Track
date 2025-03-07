@@ -51,6 +51,9 @@
     <string name="get_my_password">Get my password</string>
     <string name="activity_main_title">Profil</string>
     <string name="scan">Scan</string>
+    <string name="show_pin">Show PIN</string>
+    <string name="energie_save">Energie save</string>
+    <string name="no_energy_save_mode">Normal mode</string>
     <string-array name="questions_array">
         <item>Question 1</item>
         <item>Question 2</item>

@@ -21,7 +21,7 @@ public class UsersData2 {
     private int secret_question_id;
 
     // Constructeur
-    public void UsersData2(String pseudo, String email, String psw, String UUID, String nom_module, String pin, int secret_question_id, String secret_answer) {
+    public UsersData2(String pseudo, String email, String psw, String UUID, String nom_module, String pin, int secret_question_id, String secret_answer) {
         this.UUID_velo = UUID;
         this.pseudo = pseudo;
         this.email = email;

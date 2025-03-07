@@ -38,15 +38,16 @@ id backButton
 id backToLoginLink
 id bottom2LinearLayout
 id bottomLinearLayout
+id btnEco
 id btnFindBike
 id btnLogin
 id btnNoSignIn
-id btnNonVisible
 id btnSignIn
 id buttonConfirm
 id buttonContainer
 id buttonMenu
 id buttonSendRecovery
+id buttonShowPin
 id buttonUpdatePassword
 id buttonValidateRecoveryCode
 id buttonVeloTrouve
@@ -132,6 +133,7 @@ string email_entry
 string email_or_username_entry
 string email_password
 string email_user
+string energie_save
 string english_language
 string enter_new_password
 string exit
@@ -146,6 +148,7 @@ string map_view_description
 string menu
 string navigation_drawer_close
 string navigation_drawer_open
+string no_energy_save_mode
 string no_sign_in
 string password
 string password_confirmation
@@ -159,6 +162,7 @@ string rename_your_bike
 string renamebike
 string scan
 string settings
+string show_pin
 string sign_in
 string sign_up
 string skip
