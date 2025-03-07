@@ -13,15 +13,11 @@
 
     <!-- Permissions Bluetooth et localisation -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Permissions spécifiques pour Android 12 (API 31) et plus -->
-    <uses-permission
-        android:name="android.permission.BLUETOOTH_SCAN"
-        android:usesPermissionFlags="neverForLocation" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
 
@@ -69,15 +65,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.recup.IdentificationActivity"
-            android:exported="false" />
+            android:name="com.exemple.applicationble.MainPageActivity"
+            android:exported="true" />
         <activity
-            android:name="com.exemple.applicationble.Pswd_Regenerate"
-            android:exported="false" />
+            android:name="com.exemple.applicationble.CreateAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.exemple.applicationble.EmailInputActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.exemple.applicationble.FirstConnectionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.exemple.applicationble.HelpCommunityPage"
+            android:exported="true" />
         <activity
             android:name="com.exemple.applicationble.LoginActivity"
-            android:exported="false" />
-
+            android:exported="true" />
+        <activity
+            android:name="com.exemple.applicationble.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.exemple.applicationble.PasswordResetActivity"
+            android:exported="true" />
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"

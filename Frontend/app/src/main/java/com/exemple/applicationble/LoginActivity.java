@@ -55,6 +55,8 @@ public class LoginActivity extends AppCompatActivity {
         Button buttonConnect = findViewById(R.id.btnLogin);
         CheckBox cbRememberMe = findViewById(R.id.cbRememberMe);
         ImageView backButton = findViewById(R.id.backButton);
+        TextView create_account = findViewById(R.id.createaccount);
+        TextView forgot_pswd = findViewById(R.id.tvForgotPassword);
         // Charger les préférences sauvegardées
         loadPreferences(editTextEmailOrPseudo, editTextPassword, cbRememberMe);
 
@@ -138,8 +140,12 @@ public class LoginActivity extends AppCompatActivity {
             });
         });
 
-        TextView textViewForgotPassword = findViewById(R.id.tvForgotPassword);
-        textViewForgotPassword.setOnClickListener(view -> {
+        create_account.setOnClickListener(view -> {
+            Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
+            startActivity(intent);
+        });
+
+        forgot_pswd.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, EmailInputActivity.class);
             startActivity(intent);
         });
@@ -153,7 +159,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private Retrofit getRetrofitWithCertificate() {
-        InputStream certInputStream = getResources().openRawResource(R.raw.selfsigned);
+/*        InputStream certInputStream = getResources().openRawResource(R.raw.selfsigned);
         try {
             CertificateFactory cf = CertificateFactory.getInstance("X.509");
             Certificate ca = cf.generateCertificate(certInputStream);
@@ -173,15 +179,12 @@ public class LoginActivity extends AppCompatActivity {
                     .sslSocketFactory(sslContext.getSocketFactory(), (X509TrustManager) tmf.getTrustManagers()[0])
                     .hostnameVerifier((hostname, session) -> hostname.equals("13.36.126.63"))
                     .build();
-
+*/
             return new Retrofit.Builder()
                     .baseUrl(BASE_URL)
-                    .client(client)
+                    //.client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
-        } catch (Exception e) {
-            throw new RuntimeException("Erreur de configuration SSL", e);
-        }
     }
 
     private boolean isValidEmail(String email) {

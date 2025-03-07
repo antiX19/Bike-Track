@@ -16,6 +16,10 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_lockon.png"
     },
     {
+        "merged": "com.exemple.applicationble.app-debug-4:/raw_selfsigned.crt.flat",
+        "source": "com.exemple.applicationble.app-main-6:/raw/selfsigned.crt"
+    },
+    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_logo.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_logo.png"
     },
@@ -50,10 +54,6 @@
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_home.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_home.png"
-    },
-    {
-        "merged": "com.exemple.applicationble.app-debug-4:/layout_activity_main.xml.flat",
-        "source": "com.exemple.applicationble.app-main-6:/layout/activity_main.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_welcome.xml.flat",

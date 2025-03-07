@@ -78,7 +78,7 @@
                 android:text="@string/btnEco" />
 
             <Button
-                android:id="@+id/buttonVeloVole"
+                android:id="@+id/buttonBikeStolen"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_columnWeight="1"
@@ -86,7 +86,7 @@
                 android:text="@string/bike_stolen" />
 
             <Button
-                android:id="@+id/buttonVeloTrouve"
+                android:id="@+id/buttonBikeFound"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_columnWeight="1"
