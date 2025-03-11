@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonMenu" type="id" />
+    <item name="buttonNonVisible" type="id" />
+    <item name="buttonVeloVole" type="id" />
+    <item name="buttonVeloTrouve" type="id" />
+    <item name="lvModules" type="id" />
+    <item name="buttonShowPin" type="id" />
+    <item name="buttonScanner" type="id" />
+    <item name="bikefront" type="id" />
+</resources>

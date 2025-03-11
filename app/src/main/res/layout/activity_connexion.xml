@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/buttonBypass"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/back_button"
+        android:focusable="true"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_logo_wobg" />
+
+    <!-- Emain ou username -->
+
+    <EditText
+        android:id="@+id/editTextEmailOrPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/email_or_username_entry"
+        android:textSize="16sp"
+        android:layout_marginTop="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="20dp"
+        android:inputType="text"/>
+
+    <!-- Mot de passe -->
+
+    <!-- Mot de passe avec icône toggle -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="56dp"
+            android:background="@drawable/edittext_bg_whitebg"
+            android:drawableStart="@drawable/ic_lockon"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imageViewTogglePassword"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/toggle_password_visibility"
+            android:src="@drawable/ic_eye_off" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/identifier_reminder"
+        android:textSize="12sp"
+
+        android:layout_marginTop="0dp"/>
+
+    <!-- Bouton Se connecter -->
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:text="@string/password_forgot"
+        android:textColor="@color/heavy_gray"
+
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:fontFamily="@font/rubik_variablefont_wght"
+        android:backgroundTint="@color/apptheme"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Bouton créer un compte -->
+    <TextView
+        android:id="@+id/createaccount"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:fontFamily="@font/rubik_variablefont_wght"
+        android:text="@string/create_account"
+        android:textColor="@color/apptheme"
+        android:textSize="16sp" />
+</LinearLayout>

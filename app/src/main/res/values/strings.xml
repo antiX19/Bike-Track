@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">ApplicationBLE</string>
+    <string name="menu_hamburger">Ouvrir le menu</string>
+    <string name="toggle_password_visibility">Afficher ou masquer le mot de passe</string>
+    <string name="email_or_username_entry">Email or Username</string>
+    <string name="password">Password</string>
+    <string name="identifier_reminder">Remember me</string>
+    <string name="login">Login</string>
+    <string name="password_forgot">Forgot password ?</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="create_account">Create an account</string>
+    <string name="email_entry">Enter email address\n</string>
+    <string name="bike_logo">bike_logo</string>
+    <string name="title_activity_pswd">Forgot your password</string>
+    <string name="activity_pswd_ressource_text">Please enter the email address you\'d like your password reset information sent to</string>
+    <string name="Send_secret_question">Answer to a secret question</string>
+    <string name="back_to_login">Back To Login</string>
+    <string name="english_language">English ▼</string>
+    <string name="sign_up">Sign up</string>
+    <string name="submit">Submit</string>
+    <string name="username_entry">Username</string>
+    <string name="password_confirmation">Confirm password</string>
+    <string name="pin_code">PIN Code</string>
+    <string name="pin_code_combined">PIN Code (6 digits max, 0–9)</string>
+    <string name="answer_to_security_question">Answer to Security Question</string>
+    <string name="reglementation">By clicking the Sign up button, you agree to our <u>Terms and Condition</u> and <u>Policy Privacy</u>.</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="map_view_description">user map view position</string>
+    <string name="find_your_bike">Find your bike</string>
+    <string name="renamebike">Rename your bike</string>
+    <string name="helper_txt">Thank you for helping the community</string>
+    <string name="back_button">back button</string>
+    <string name="menu">Menu</string>
+    <string name="visible">Visible</string>
+    <string name="btnEco">Mode Eco</string>
+    <string name="bike_stolen">My bike has been stolen</string>
+    <string name="bike_found">I found my bike</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="welcome_app_msg">Welcome to BikeTrack !</string>
+    <string name="welcome_app_sub_msg">where your safety is our ambition</string>
+    <string name="sign_in">Sign in</string>
+    <string name="no_sign_in">Help the community</string>
+    <string name="skip">Skip</string>
+    <string name="logout">Log out</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="rename_your_bike">Rename your bike</string>
+    <string name="question_answer">Question answer</string>
+    <string name="get_my_password">Get my password</string>
+    <string name="activity_main_title">Profil</string>
+    <string name="scan">Scan</string>
+    <string name="show_pin">Show PIN</string>
+    <string name="energie_save">Energie save</string>
+    <string name="no_energy_save_mode">Normal mode</string>
+    <string name="ble_list">BLE list</string>
+    <string-array name="questions_array">
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+    </string-array>
+</resources>
