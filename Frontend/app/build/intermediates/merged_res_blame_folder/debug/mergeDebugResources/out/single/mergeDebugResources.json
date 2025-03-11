@@ -8,16 +8,20 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_user.png"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/menu_nav_menu.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/menu/nav_menu.xml"
-    },
-    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_lockon.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_lockon.png"
     },
     {
-        "merged": "com.exemple.applicationble.app-debug-4:/raw_selfsigned.crt.flat",
-        "source": "com.exemple.applicationble.app-main-6:/raw/selfsigned.crt"
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/menu_nav_menu.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/menu/nav_menu.xml"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_helpcommunity.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_helpcommunity.xml"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_first_connection.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_first_connection.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_logo.png.flat",
@@ -54,10 +58,6 @@
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_home.png.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/ic_home.png"
-    },
-    {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_welcome.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_welcome.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/drawable_ic_logo_wobg.png.flat",
@@ -152,12 +152,12 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/drawable/helper_picture.jpg"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_rename.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_rename.xml"
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/anim_scale_down.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/anim/scale_down.xml"
     },
     {
-        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_helper.xml.flat",
-        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_helper.xml"
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_rename.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_rename.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -184,8 +184,16 @@
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.exemple.applicationble.app-debug-4:/layout_activity_login.xml.flat",
+        "source": "com.exemple.applicationble.app-main-6:/layout/activity_login.xml"
+    },
+    {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/layout_activity_homepage.xml.flat",
         "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/layout/activity_homepage.xml"
+    },
+    {
+        "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/anim_scale_up.xml.flat",
+        "source": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-main-6:/anim/scale_up.xml"
     },
     {
         "merged": "/home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/daemon/8.11/com.exemple.applicationble.app-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",

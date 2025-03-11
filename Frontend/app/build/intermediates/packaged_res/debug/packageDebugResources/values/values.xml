@@ -24,6 +24,7 @@
     <string name="bike_stolen">My bike has been stolen</string>
     <string name="btnEco">Eco</string>
     <string name="confirm_new_password">Confirm new password</string>
+    <string name="connect">Connect</string>
     <string name="create_account">Create an account</string>
     <string name="email_entry">Enter email address\n</string>
     <string name="email_or_username_entry">Email or Username</string>

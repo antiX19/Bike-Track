@@ -31,7 +31,7 @@
         android:theme="@style/Theme.ApplicationBLE"
         tools:targetApi="31">
 
-        <!-- Activité principale avec intent filter -->
+        <!-- Main Entry Activity -->
         <activity
             android:name=".HomePageActivity"
             android:exported="true">
@@ -41,30 +41,28 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MainPageActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CreateAccountActivity"
-            android:exported="true" />
-        <activity
-            android:name=".EmailInputActivity"
-            android:exported="true" />
-        <activity
-            android:name=".FirstConnectionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".HelpCommunityPage"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PasswordResetActivity"
-            android:exported="true" />
+        <!-- Activities -->
+
+        <activity android:name=".CreateAccountActivity" android:exported="true" />
+        <activity android:name=".EmailInputActivity" android:exported="true" />
+        <activity android:name=".FirstConnectionActivity" android:exported="false" />
+        <activity android:name=".HelpCommunityActivity" android:exported="true" />
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".MainPageActivity" android:exported="true" />
+        <activity android:name=".PasswordResetActivity" android:exported="true" />
+
+        <!-- Services -->
+        <service android:name=".ForegroundService" android:exported="false" />
+        <service android:name=".MonitoringService" android:exported="false" />
+
+        <!-- Broadcast Receiver -->
+        <receiver android:name=".BootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

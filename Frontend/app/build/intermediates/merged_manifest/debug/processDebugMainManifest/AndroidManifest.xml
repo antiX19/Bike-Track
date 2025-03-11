@@ -52,9 +52,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.ApplicationBLE" >
 
-        <!-- Activité principale avec intent filter -->
+        <!-- Main Entry Activity -->
         <activity
             android:name="com.exemple.applicationble.HomePageActivity"
             android:exported="true" >
@@ -64,9 +65,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.exemple.applicationble.MainPageActivity"
-            android:exported="true" />
+
+        <!-- Activities -->
+
         <activity
             android:name="com.exemple.applicationble.CreateAccountActivity"
             android:exported="true" />
@@ -75,9 +76,9 @@
             android:exported="true" />
         <activity
             android:name="com.exemple.applicationble.FirstConnectionActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
-            android:name="com.exemple.applicationble.HelpCommunityPage"
+            android:name="com.exemple.applicationble.HelpCommunityActivity"
             android:exported="true" />
         <activity
             android:name="com.exemple.applicationble.LoginActivity"
@@ -86,8 +87,29 @@
             android:name="com.exemple.applicationble.MainActivity"
             android:exported="true" />
         <activity
+            android:name="com.exemple.applicationble.MainPageActivity"
+            android:exported="true" />
+        <activity
             android:name="com.exemple.applicationble.PasswordResetActivity"
             android:exported="true" />
+
+        <!-- Services -->
+        <service
+            android:name="com.exemple.applicationble.ForegroundService"
+            android:exported="false" />
+        <service
+            android:name="com.exemple.applicationble.MonitoringService"
+            android:exported="false" />
+
+        <!-- Broadcast Receiver -->
+        <receiver
+            android:name="com.exemple.applicationble.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"

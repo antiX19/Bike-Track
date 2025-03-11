@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim scale_down
+anim scale_up
 array questions_array
 color Title
 color apptheme
@@ -36,22 +38,20 @@ id Welcome_msg
 id Welcome_msg_sub
 id backButton
 id backToLoginLink
-id bottom2LinearLayout
 id bottomLinearLayout
 id btnEco
 id btnFindBike
 id btnLogin
 id btnNoSignIn
 id btnSignIn
+id buttonBikeFound
+id buttonBikeStolen
 id buttonConfirm
 id buttonContainer
 id buttonMenu
 id buttonSendRecovery
-id buttonShowPin
 id buttonUpdatePassword
 id buttonValidateRecoveryCode
-id buttonVeloTrouve
-id buttonVeloVole
 id cardView
 id cbRememberMe
 id confirmPasswordInput
@@ -86,7 +86,6 @@ id nav_settings
 id navigation_view
 id passwordInput
 id pinCodeInput
-id scanBLE
 id scrollView
 id scrollViewLinearLayout
 id securityAnswerInput
@@ -99,16 +98,15 @@ id titleText
 id topLinearLayout
 id tvForgotPassword
 id usernameInput
-id valideform
 layout activity_accountsettings
 layout activity_email_input
-layout activity_helper
+layout activity_first_connection
+layout activity_helpcommunity
 layout activity_homepage
 layout activity_login
 layout activity_main
 layout activity_password_reset
 layout activity_rename
-layout activity_welcome
 layout nav_header
 menu nav_menu
 mipmap ic_launcher
@@ -128,6 +126,7 @@ string bike_logo
 string bike_stolen
 string btnEco
 string confirm_new_password
+string connect
 string create_account
 string email_entry
 string email_or_username_entry

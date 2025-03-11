@@ -43,6 +43,8 @@ anim m3_side_sheet_exit_to_right
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim scale_down
+anim scale_up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3303,7 +3305,6 @@ id below
 id bestChoice
 id blocking
 id bottom
-id bottom2LinearLayout
 id bottomLinearLayout
 id bounce
 id bounceBoth
@@ -3314,16 +3315,15 @@ id btnFindBike
 id btnLogin
 id btnNoSignIn
 id btnSignIn
+id buttonBikeFound
+id buttonBikeStolen
 id buttonConfirm
 id buttonContainer
 id buttonMenu
 id buttonPanel
 id buttonSendRecovery
-id buttonShowPin
 id buttonUpdatePassword
 id buttonValidateRecoveryCode
-id buttonVeloTrouve
-id buttonVeloVole
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3637,7 +3637,6 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
-id scanBLE
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3760,7 +3759,6 @@ id unlabeled
 id up
 id useLogo
 id usernameInput
-id valideform
 id vertical
 id vertical_only
 id view_offset_helper
@@ -3898,13 +3896,13 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accountsettings
 layout activity_email_input
-layout activity_helper
+layout activity_first_connection
+layout activity_helpcommunity
 layout activity_homepage
 layout activity_login
 layout activity_main
 layout activity_password_reset
 layout activity_rename
-layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4068,6 +4066,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string confirm_new_password
+string connect
 string create_account
 string email_entry
 string email_or_username_entry

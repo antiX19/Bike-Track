@@ -30,6 +30,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
+import java.util.UUID;
 
 public class MainPageActivity extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
@@ -41,6 +42,10 @@ public class MainPageActivity extends AppCompatActivity {
     private List<BluetoothDevice> bleDeviceList = new ArrayList<>();
     private List<String> deviceList = new ArrayList<>();
     private ArrayAdapter<String> adapter;
+
+    private static final UUID SERVICE_UUID = UUID.fromString("0000ffe0-0000-1000-8000-00805f9b34fb");
+    private static final UUID CHARACTERISTIC_UUID = UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

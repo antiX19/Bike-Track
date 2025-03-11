@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-70:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-70:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-70:12
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-70:12
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:2:1-68:12
 MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c99f18a8f61223217b3228eb33dd74f4/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a2ed072200cb9a5b24b9e443d2039b87/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/6cd4e8b4f301b5166f846374fe32303d/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
@@ -108,8 +108,8 @@ ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:20:9-54
 application
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-68:19
-INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-68:19
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-66:19
+INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:23:5-66:19
 MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c99f18a8f61223217b3228eb33dd74f4/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
 MERGED from [org.conscrypt:conscrypt-android:2.5.2] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/c99f18a8f61223217b3228eb33dd74f4/transformed/conscrypt-android-2.5.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/tpreseau/Documents/Last-project/Frontend/app/gradle/wrapper/caches/8.11/transforms/a2ed072200cb9a5b24b9e443d2039b87/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
@@ -176,54 +176,78 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:17-77
 	android:name
 		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:40:27-74
-activity#com.exemple.applicationble.MainPageActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:44:9-46:39
-	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:46:13-36
-	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:45:13-45
 activity#com.exemple.applicationble.CreateAccountActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:47:9-49:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:46:9-83
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:46:57-80
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:13-50
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:46:19-56
 activity#com.exemple.applicationble.EmailInputActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:9-52:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:47:9-80
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:47:54-77
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:13-47
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:47:19-53
 activity#com.exemple.applicationble.FirstConnectionActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:53:9-55:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:9-86
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:55:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:59-83
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:54:13-52
-activity#com.exemple.applicationble.HelpCommunityPage
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:56:9-58:39
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:48:19-58
+activity#com.exemple.applicationble.HelpCommunityActivity
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:9-83
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:58:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:57-80
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:57:13-46
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:49:19-56
 activity#com.exemple.applicationble.LoginActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:59:9-61:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:9-75
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:61:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:49-72
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:60:13-42
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:50:19-48
 activity#com.exemple.applicationble.MainActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:62:9-64:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:9-74
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:64:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:48-71
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:63:13-41
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:51:19-47
+activity#com.exemple.applicationble.MainPageActivity
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:9-78
+	android:exported
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:52-75
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:52:19-51
 activity#com.exemple.applicationble.PasswordResetActivity
-ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:65:9-67:39
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:53:9-83
 	android:exported
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:67:13-36
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:53:57-80
 	android:name
-		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:66:13-50
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:53:19-56
+service#com.exemple.applicationble.ForegroundService
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:56:9-79
+	android:exported
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:56:52-76
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:56:18-51
+service#com.exemple.applicationble.MonitoringService
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:57:9-79
+	android:exported
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:57:52-76
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:57:18-51
+receiver#com.exemple.applicationble.BootReceiver
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:60:9-64:20
+	android:exported
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:60:48-72
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:60:19-47
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:61:13-63:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:62:17-78
+	android:name
+		ADDED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml:62:25-76
 uses-sdk
 INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/tpreseau/Bureau/LastProject/Frontend/app/src/main/AndroidManifest.xml

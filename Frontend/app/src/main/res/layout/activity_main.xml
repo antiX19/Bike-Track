@@ -5,36 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <!-- Contenu principal -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
         android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/backButton"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:contentDescription="@string/back_button"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:text="@string/activity_main_title"
-        android:textColor="@color/Title"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <!-- Bouton Menu (ouvre le DrawerLayout) -->
+        <ImageButton
+            android:id="@+id/buttonMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|end"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/menu"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/activity_main_title"
+            android:textColor="@color/Title"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Votre CardView avec MapView -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="200dp"
@@ -51,94 +65,51 @@
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-
         </androidx.cardview.widget.CardView>
 
-
+        <!-- GridLayout pour les boutons -->
         <GridLayout
             android:id="@+id/buttonContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_width="352dp"
+            android:layout_height="201dp"
             android:layout_marginTop="20dp"
             android:columnCount="3"
             android:padding="10dp"
             android:rowCount="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView">
-
+            app:layout_constraintTop_toBottomOf="@id/cardView">
 
             <Button
                 android:id="@+id/btnEco"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 android:text="@string/btnEco" />
 
             <Button
                 android:id="@+id/buttonBikeStolen"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 android:text="@string/bike_stolen" />
 
             <Button
                 android:id="@+id/buttonBikeFound"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_columnWeight="1"
-                android:text="@string/bike_found"
-                android:layout_margin="4dp" />
-
+                android:layout_margin="4dp"
+                android:text="@string/bike_found" />
         </GridLayout>
 
-        <LinearLayout
-            android:id="@+id/layoutRename"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonContainer">
-
-            <ListView
-                android:id="@+id/listViewBleDevices"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true" />
-
-            <EditText
-                android:id="@+id/scanBLE"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="true"
-                android:focusable="true"
-                android:hint="@string/scan"
-                android:inputType="text"
-                android:clickable="true"
-                android:maxLength="12" />
-
-            <Button
-                android:id="@+id/buttonShowPin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/show_pin"
-                android:layout_marginBottom="8dp" />
-
-        </LinearLayout>
-
-
+        <!-- Autres éléments comme ListView et EditText -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Navigation View -->
+    <!-- Navigation View (Drawer qui apparaît lorsque buttonMenu est cliqué) -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
@@ -146,16 +117,5 @@
         android:layout_gravity="end"
         app:menu="@menu/nav_menu"
         app:headerLayout="@layout/nav_header" />
-
-    <ImageButton
-        android:id="@+id/buttonMenu"
-        android:layout_width="30dp"
-        android:layout_height="25dp"
-        android:layout_gravity="top|end"
-        android:layout_margin="8dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/menu"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
