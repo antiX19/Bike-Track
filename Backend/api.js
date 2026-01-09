@@ -11,11 +11,11 @@ app.use(express.json()); // Middleware pour parser le JSON
 
 const SECRET_KEY = process.env.SECRET_KEY;
 
-// 🔐 Charger les variables d'environnement
+//Charger les variables d'environnement
 //const SECRET_KEY = process.env.SECRET_KEY;
 //const httpsPort = process.env.HTTPS_PORT || 3003;
 
-// 🎯 Connexion à la base de données
+//Connexion à la base de données
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -25,20 +25,20 @@ const db = mysql.createConnection({
 
 db.connect(err => {
     if (err) {
-        console.error('❌ Erreur de connexion MySQL :', err);
+        console.error('Erreur de connexion MySQL :', err);
         return;
     }
-    console.log('✅ Connecté à MySQL');
+    console.log('Connecté à MySQL');
 });
 
-/* 🌐 Charger les certificats SSL
+/*Charger les certificats SSL
 const sslOptions = {
     key: fs.readFileSync(process.env.SSL_KEY_PATH),
     cert: fs.readFileSync(process.env.SSL_CERT_PATH)
 };*/
 
-// ========================= MIDDLEWARE JWT =========================
-// 🔒 Middleware pour protéger les routes avec JWT
+// ==MIDDLEWARE JWT ==
+// Middleware pour protéger les routes avec JWT
 function verifyToken(req, res, next) {
     const token = req.headers['authorization'];
     if (!token) {
@@ -56,12 +56,12 @@ function verifyToken(req, res, next) {
 
 // ========================= ROUTES =========================
 
-// ✅ Route de test
+// Route de test
 app.get('/', verifyToken, (req, res) => {
     res.send('🚀 API BikeTrack est en ligne et sécurisée !');
 });
 
-// ✅ Route de connexion avec JWT
+// Route de connexion avec JWT
 app.post('/login', (req, res) => {
     const { pseudo, psw } = req.body;
 
@@ -99,7 +99,7 @@ app.post('/login', (req, res) => {
     });
 });
 
-// ✅ Afficher tous les utilisateurs (sécurisé)
+// Afficher tous les utilisateurs (sécurisé)
 app.get('/users', verifyToken, (req, res) => {
     db.query('SELECT * FROM user', (err, results) => {
         if (err) {
@@ -110,7 +110,7 @@ app.get('/users', verifyToken, (req, res) => {
     });
 });
 
-// ✅ Récupérer les données GPS d'un vélo (sécurisé)
+// Récupérer les données GPS d'un vélo (sécurisé)
 app.get('/gps/:UUID', verifyToken, (req, res) => {
     const { UUID } = req.params;
 
@@ -125,7 +125,7 @@ app.get('/gps/:UUID', verifyToken, (req, res) => {
     });
 });
 
-// ✅ Marquer un vélo comme volé (sécurisé)
+// Marquer un vélo comme volé (sécurisé)
 app.put('/velo/vole/:UUID', verifyToken, (req, res) => {
     const { UUID } = req.params;
     const { user_id } = req.body;
@@ -151,7 +151,7 @@ app.put('/velo/vole/:UUID', verifyToken, (req, res) => {
     });
 });
 
-// ✅ Modifier le statut d'un vélo retrouvé (sécurisé)
+// Modifier le statut d'un vélo retrouvé (sécurisé)
 app.put('/velo/retrouve/:UUID', verifyToken, (req, res) => {
     const { UUID } = req.params;
     const { user_id } = req.body;
